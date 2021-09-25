@@ -20,4 +20,3 @@ var mapContainer3 = document.getElementById('map3'),
         level: 3
     };
 var map3 = new kakao.maps.Map(mapContainer3, mapOption3);
-
