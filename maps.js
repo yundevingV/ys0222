@@ -14,13 +14,13 @@
 	})
 
 	function kakaomap1(){
-		var container = document.getElementById('map1');
-		var options = {
+		var container1 = document.getElementById('map1');
+		var options1 = {
 			center: new kakao.maps.LatLng(55.450701, 126.570667),
 			level: 3
 		};
 
-		var map1 = new kakao.maps.Map1(container, options);
+		var map1 = new kakao.maps.Map1(container1, options1);
 	};
 
 	$(function(){
