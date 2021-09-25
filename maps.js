@@ -16,8 +16,8 @@ var map2 = new daum.maps.Map(mapContainer2, mapOption2);
 
 var mapContainer3 = document.getElementById('map3'),
     mapOption3 = { 
-        center: new daum.maps.LatLng(37.44929973776679, 126.70375331336395),
-        level: 1
+        center: new daum.maps.LatLng(37.449299, 126.703753),
+        level: 3
     };
 var map3 = new kakao.maps.Map(mapContainer3, mapOption3);
 
