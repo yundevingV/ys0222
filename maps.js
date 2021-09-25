@@ -12,7 +12,7 @@ var mapContainer2 = document.getElementById('map2'),
         center: new kakao.maps.LatLng(33.450701, 126.570667),
         level: 3
     };
-var map2 = new daum.maps.Map(mapContainer2, mapOption2);
+var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
 
 var mapContainer3 = document.getElementById('map3'),
     mapOption3 = { 
