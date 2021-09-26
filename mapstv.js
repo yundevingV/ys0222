@@ -34,4 +34,4 @@ var marker4 = new kakao.maps.Marker({
 });
 
 
-marker3.setMap(map4);
+marker4.setMap(map4);
