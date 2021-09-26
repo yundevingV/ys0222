@@ -1,18 +1,20 @@
-var mapContainer1 = document.getElementById('map1'),
-    mapOption1 = {  
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
+var mapContainer = document.getElementById('map'),
+    mapOption = {  
+        center: new kakao.maps.LatLng(37.45973245546476, 126.7071367800412),
         level: 3
     };
-var map1 = new kakao.maps.Map(mapContainer1, mapOption1);
+var map = new kakao.maps.Map(mapContainer, mapOption);
     
 
+var markerPosition  = new kakao.maps.LatLng(37.45973245546476, 126.7071367800412); 
 
-var mapContainer2 = document.getElementById('map2'),
-    mapOption2 = { 
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
-        level: 3
-    };
-var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+
+marker.setMap(map);
 
 
 
