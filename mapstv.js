@@ -153,13 +153,13 @@ marker10.setMap(map10);
 
 var mapContainer11 = document.getElementById('map11'),
     mapOption11 = { 
-        center: new kakao.maps.LatLng(37.48628507036234, 126.87201547668678),
+        center: new kakao.maps.LatLng(37.47439745813223, 126.86926565320022),
         level: 3
     };
 var map11 = new kakao.maps.Map(mapContainer11, mapOption11);
 
 
-var markerPosition11  = new kakao.maps.LatLng(37.48628507036234, 126.87201547668678); 
+var markerPosition11  = new kakao.maps.LatLng(37.47439745813223, 126.86926565320022); 
 
 
 var marker11 = new kakao.maps.Marker({
@@ -172,13 +172,13 @@ marker11.setMap(map11);
 
 var mapContainer12 = document.getElementById('map12'),
     mapOption12 = { 
-        center: new kakao.maps.LatLng(37.48230555539501, 126.86858182774104),
+        center: new kakao.maps.LatLng(37.47503755771289, 126.86968493540908),
         level: 3
     };
 var map12 = new kakao.maps.Map(mapContainer12, mapOption12);
 
 
-var markerPosition12 = new kakao.maps.LatLng(37.48230555539501, 126.86858182774104); 
+var markerPosition12 = new kakao.maps.LatLng(37.47503755771289, 126.86968493540908); 
 
 
 var marker12 = new kakao.maps.Marker({
@@ -191,13 +191,13 @@ marker12.setMap(map12);
 
 var mapContainer13 = document.getElementById('map13'),
     mapOption13 = { 
-        center: new kakao.maps.LatLng(37.480773550612426, 126.8712086978625),
+        center: new kakao.maps.LatLng(37.45236360650991, 126.70820581000599),
         level: 3
     };
 var map13 = new kakao.maps.Map(mapContainer13, mapOption13);
 
 
-var markerPosition13 = new kakao.maps.LatLng(37.480773550612426, 126.8712086978625); 
+var markerPosition13 = new kakao.maps.LatLng(37.45236360650991, 126.70820581000599); 
 
 
 var marker13 = new kakao.maps.Marker({
@@ -207,21 +207,3 @@ var marker13 = new kakao.maps.Marker({
 
 marker13.setMap(map13);
 
-
-var mapContainer = document.getElementById('kfc'),
-    mapOption = { 
-        center: new kakao.maps.LatLng(37.45236360650991, 126.70820581000599),
-        level: 3
-    };
-var kfc = new kakao.maps.Map(mapContainer, mapOption);
-
-
-var markerPosition = new kakao.maps.LatLng(37.45236360650991, 126.70820581000599); 
-
-
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-
-marker.setMap(kfc);
