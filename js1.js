@@ -37,6 +37,9 @@ function ys(){
             alert(lucky+  " //  주의!! 하루에 한 번만 하시오");
             
         }
+        function todolist(){
+            window.open("https://github.com/Cat-JiYoung/clone-Momentum");
+        }
         function yt(){
             window.open("https://www.youtube.com/?hl=KO");
         }
