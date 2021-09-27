@@ -35,3 +35,193 @@ var marker4 = new kakao.maps.Marker({
 
 
 marker4.setMap(map4);
+
+
+var mapContainer5 = document.getElementById('map5'),
+    mapOption5 = { 
+        center: new kakao.maps.LatLng(37.516092248543686, 126.90610312677809),
+        level: 3
+    };
+var map5 = new kakao.maps.Map(mapContainer5, mapOption5);
+
+
+var markerPosition5  = new kakao.maps.LatLng(37.516092248543686, 126.90610312677809); 
+
+
+var marker5 = new kakao.maps.Marker({
+    position: markerPosition5
+});
+
+
+marker5.setMap(map5);
+
+var mapContainer6 = document.getElementById('map6'),
+    mapOption6 = { 
+        center: new kakao.maps.LatLng(37.45095296156324, 126.86338665561192),
+        level: 3
+    };
+var map6 = new kakao.maps.Map(mapContainer6, mapOption6);
+
+
+var markerPosition6  = new kakao.maps.LatLng(37.45095296156324, 126.86338665561192); 
+
+
+var marker6 = new kakao.maps.Marker({
+    position: markerPosition6
+});
+
+
+marker6.setMap(map6);
+
+
+var mapContainer7 = document.getElementById('map7'),
+    mapOption7 = { 
+        center: new kakao.maps.LatLng(37.45363066672664, 126.86421228763916),
+        level: 3
+    };
+var map7 = new kakao.maps.Map(mapContainer7, mapOption7);
+
+
+var markerPosition7  = new kakao.maps.LatLng(37.45363066672664, 126.86421228763916); 
+
+
+var marker7 = new kakao.maps.Marker({
+    position: markerPosition7
+});
+
+
+marker7.setMap(map7);
+
+
+
+var mapContainer8 = document.getElementById('map8'),
+    mapOption8 = { 
+        center: new kakao.maps.LatLng(37.4920238334788, 126.8575354174912),
+        level: 3
+    };
+var map8 = new kakao.maps.Map(mapContainer8, mapOptio8);
+
+
+var markerPosition8  = new kakao.maps.LatLng(37.4920238334788, 126.8575354174912); 
+
+
+var marker8 = new kakao.maps.Marker({
+    position: markerPosition8
+});
+
+
+marker8.setMap(map8);
+
+var mapContainer9 = document.getElementById('map9'),
+    mapOption9 = { 
+        center: new kakao.maps.LatLng(37.4920238334788, 126.8575354174912),
+        level: 3
+    };
+var map9 = new kakao.maps.Map(mapContainer9, mapOptio9);
+
+
+var markerPosition9  = new kakao.maps.LatLng(37.4920238334788, 126.8575354174912); 
+
+
+var marker9 = new kakao.maps.Marker({
+    position: markerPosition9
+});
+
+
+marker9.setMap(map9);
+
+
+
+var mapContainer10 = document.getElementById('map10'),
+    mapOption10 = { 
+        center: new kakao.maps.LatLng(37.474230570829405, 126.87087227095363),
+        level: 3
+    };
+var map10 = new kakao.maps.Map(mapContainer10, mapOptio10);
+
+
+var markerPosition10  = new kakao.maps.LatLng(37.474230570829405, 126.87087227095363); 
+
+
+var marker10 = new kakao.maps.Marker({
+    position: markerPosition10
+});
+
+
+marker10.setMap(map10);
+
+
+var mapContainer11 = document.getElementById('map11'),
+    mapOption11 = { 
+        center: new kakao.maps.LatLng(37.48628507036234, 126.87201547668678),
+        level: 3
+    };
+var map11 = new kakao.maps.Map(mapContainer11, mapOptio11);
+
+
+var markerPosition11  = new kakao.maps.LatLng(37.48628507036234, 126.87201547668678); 
+
+
+var marker11 = new kakao.maps.Marker({
+    position: markerPosition11
+});
+
+
+marker11.setMap(map11);
+
+
+var mapContainer12 = document.getElementById('map12'),
+    mapOption12 = { 
+        center: new kakao.maps.LatLng(37.48230555539501, 126.86858182774104),
+        level: 3
+    };
+var map12 = new kakao.maps.Map(mapContainer12, mapOptio12);
+
+
+var markerPosition12 = new kakao.maps.LatLng(37.48230555539501, 126.86858182774104); 
+
+
+var marker12 = new kakao.maps.Marker({
+    position: markerPosition12
+});
+
+
+marker12.setMap(map12);
+
+
+var mapContainer13 = document.getElementById('map13'),
+    mapOption13 = { 
+        center: new kakao.maps.LatLng(37.480773550612426, 126.8712086978625),
+        level: 3
+    };
+var map13 = new kakao.maps.Map(mapContainer13, mapOptio13);
+
+
+var markerPosition13 = new kakao.maps.LatLng(37.480773550612426, 126.8712086978625); 
+
+
+var marker13 = new kakao.maps.Marker({
+    position: markerPosition13
+});
+
+
+marker13.setMap(map13);
+
+
+var mapContainer = document.getElementById('kfc'),
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.45236360650991, 126.70820581000599),
+        level: 3
+    };
+var kfc = new kakao.maps.Map(mapContainer, mapOptio);
+
+
+var markerPosition = new kakao.maps.LatLng(37.45236360650991, 126.70820581000599); 
+
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+
+marker.setMap(kfc);
