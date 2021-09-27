@@ -38,7 +38,7 @@ function ys(){
             
         }
         function todolist(){
-            window.open("https://github.com/Cat-JiYoung/clone-Momentum");
+            window.open("https://cat-jiyoung.github.io/clone-Momentum/");
         }
         function yt(){
             window.open("https://www.youtube.com/?hl=KO");
