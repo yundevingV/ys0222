@@ -57,13 +57,13 @@ marker5.setMap(map5);
 
 var mapContainer6 = document.getElementById('map6'),
     mapOption6 = { 
-        center: new kakao.maps.LatLng(37.45095296156324, 126.86338665561192),
+        center: new kakao.maps.LatLng(37.45078375086212, 126.86336227839347),
         level: 3
     };
 var map6 = new kakao.maps.Map(mapContainer6, mapOption6);
 
 
-var markerPosition6  = new kakao.maps.LatLng(37.45095296156324, 126.86338665561192); 
+var markerPosition6  = new kakao.maps.LatLng(37.45078375086212, 126.86336227839347); 
 
 
 var marker6 = new kakao.maps.Marker({
@@ -76,13 +76,13 @@ marker6.setMap(map6);
 
 var mapContainer7 = document.getElementById('map7'),
     mapOption7 = { 
-        center: new kakao.maps.LatLng(37.45363066672664, 126.86421228763916),
+        center: new kakao.maps.LatLng(37.45072051262726, 126.86334520892099),
         level: 3
     };
 var map7 = new kakao.maps.Map(mapContainer7, mapOption7);
 
 
-var markerPosition7  = new kakao.maps.LatLng(37.45363066672664, 126.86421228763916); 
+var markerPosition7  = new kakao.maps.LatLng(37.45072051262726, 126.86334520892099); 
 
 
 var marker7 = new kakao.maps.Marker({
@@ -99,7 +99,7 @@ var mapContainer8 = document.getElementById('map8'),
         center: new kakao.maps.LatLng(37.4920238334788, 126.8575354174912),
         level: 3
     };
-var map8 = new kakao.maps.Map(mapContainer8, mapOptio8);
+var map8 = new kakao.maps.Map(mapContainer8, mapOption8);
 
 
 var markerPosition8  = new kakao.maps.LatLng(37.4920238334788, 126.8575354174912); 
@@ -117,7 +117,7 @@ var mapContainer9 = document.getElementById('map9'),
         center: new kakao.maps.LatLng(37.4920238334788, 126.8575354174912),
         level: 3
     };
-var map9 = new kakao.maps.Map(mapContainer9, mapOptio9);
+var map9 = new kakao.maps.Map(mapContainer9, mapOption9);
 
 
 var markerPosition9  = new kakao.maps.LatLng(37.4920238334788, 126.8575354174912); 
@@ -137,7 +137,7 @@ var mapContainer10 = document.getElementById('map10'),
         center: new kakao.maps.LatLng(37.474230570829405, 126.87087227095363),
         level: 3
     };
-var map10 = new kakao.maps.Map(mapContainer10, mapOptio10);
+var map10 = new kakao.maps.Map(mapContainer10, mapOption10);
 
 
 var markerPosition10  = new kakao.maps.LatLng(37.474230570829405, 126.87087227095363); 
@@ -156,7 +156,7 @@ var mapContainer11 = document.getElementById('map11'),
         center: new kakao.maps.LatLng(37.48628507036234, 126.87201547668678),
         level: 3
     };
-var map11 = new kakao.maps.Map(mapContainer11, mapOptio11);
+var map11 = new kakao.maps.Map(mapContainer11, mapOption11);
 
 
 var markerPosition11  = new kakao.maps.LatLng(37.48628507036234, 126.87201547668678); 
@@ -175,7 +175,7 @@ var mapContainer12 = document.getElementById('map12'),
         center: new kakao.maps.LatLng(37.48230555539501, 126.86858182774104),
         level: 3
     };
-var map12 = new kakao.maps.Map(mapContainer12, mapOptio12);
+var map12 = new kakao.maps.Map(mapContainer12, mapOption12);
 
 
 var markerPosition12 = new kakao.maps.LatLng(37.48230555539501, 126.86858182774104); 
@@ -194,7 +194,7 @@ var mapContainer13 = document.getElementById('map13'),
         center: new kakao.maps.LatLng(37.480773550612426, 126.8712086978625),
         level: 3
     };
-var map13 = new kakao.maps.Map(mapContainer13, mapOptio13);
+var map13 = new kakao.maps.Map(mapContainer13, mapOption13);
 
 
 var markerPosition13 = new kakao.maps.LatLng(37.480773550612426, 126.8712086978625); 
@@ -213,7 +213,7 @@ var mapContainer = document.getElementById('kfc'),
         center: new kakao.maps.LatLng(37.45236360650991, 126.70820581000599),
         level: 3
     };
-var kfc = new kakao.maps.Map(mapContainer, mapOptio);
+var kfc = new kakao.maps.Map(mapContainer, mapOption);
 
 
 var markerPosition = new kakao.maps.LatLng(37.45236360650991, 126.70820581000599); 
