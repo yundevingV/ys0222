@@ -7,28 +7,33 @@ var changeBodyColor={
 },
 };
 
-var changeAColor={
-    setAColor: function(_aColor){
-        var aList = document.querySelectorAll("a");
-        for(var i=0;i<aList.length;i++){
-            aList[i].style.color=_aColor;
-        }
-    }
-};
+
+
 
 
 
 function convertDayNight(Self){
     if(self.value=="day"){
         self.value="night";
-        changeBodyColor.setBodyColor("white");
         changeBodyColor.setBodyBackColor("#282828");
-        changeAColor.setAColor("powerblue");
+        changeBodyColor.setBodyColor("white");
+       
+        
     }
     else {
         self.value="day";
-        changeBodyColor.setBodyColor("black");
         changeBodyColor.setBodyBackColor("white");
-        changeAColor.setAColor("blue");
+        changeBodyColor.setBodyColor("black");
+        
+     
+        
     }
 }
+
+const subs = document.getElementById("converter")
+
+subs.addEventListener("click", function() {
+    if(subs.innerText === 'Veiw Dark Mode') {
+        subs.innerText = 'Veiw Light Mode';
+    } else subs.innerText ='Veiw Dark Mode';
+});
