@@ -96,13 +96,13 @@ marker7.setMap(map7);
 
 var mapContainer8 = document.getElementById('map8'),
     mapOption8 = { 
-        center: new kakao.maps.LatLng(37.47369, 126.867),
+        center: new kakao.maps.LatLng(37.47448, 126.86758),
         level: 3
     };
 var map8 = new kakao.maps.Map(mapContainer8, mapOption8);
 
 
-var markerPosition8  = new kakao.maps.LatLng(37.47369, 126.867); 
+var markerPosition8  = new kakao.maps.LatLng(37.47448, 126.86758); 
 
 
 var marker8 = new kakao.maps.Marker({
@@ -114,13 +114,13 @@ marker8.setMap(map8);
 
 var mapContainer9 = document.getElementById('map9'),
     mapOption9 = { 
-        center: new kakao.maps.LatLng(37.4716,126.87081),
+        center: new kakao.maps.LatLng(37.47412,126.87081),
         level: 3
     };
 var map9 = new kakao.maps.Map(mapContainer9, mapOption9);
 
 
-var markerPosition9  = new kakao.maps.LatLng(37.4716,126.87081); 
+var markerPosition9  = new kakao.maps.LatLng(37.47412,126.87081); 
 
 
 var marker9 = new kakao.maps.Marker({
@@ -227,13 +227,13 @@ marker14.setMap(map14);
 
 var mapContainer15 = document.getElementById('map15'),
     mapOption15 = { 
-        center: new kakao.maps.LatLng(37.45646,126.71951),
+        center: new kakao.maps.LatLng(37.45554,126.71964),
         level: 3
     };
 var map15 = new kakao.maps.Map(mapContainer15, mapOption15);
 
 
-var markerPosition15 = new kakao.maps.LatLng(37.45646,126.71951); 
+var markerPosition15 = new kakao.maps.LatLng(37.45554,126.71964); 
 
 
 var marker15 = new kakao.maps.Marker({
@@ -242,17 +242,17 @@ var marker15 = new kakao.maps.Marker({
 
 
 marker15.setMap(map15);
-
+//서브웨이 모래네시장점
 
 var mapContainer16 = document.getElementById('map16'),
     mapOption16 = { 
-        center: new kakao.maps.LatLng(37.49829,126.72104),
+        center: new kakao.maps.LatLng(37.49409,126.72321),
         level: 3
     };
 var map16 = new kakao.maps.Map(mapContainer16, mapOption16);
 
 
-var markerPosition16 = new kakao.maps.LatLng(37.49829,126.72104); 
+var markerPosition16 = new kakao.maps.LatLng(37.49409,126.72321); 
 
 
 var marker16 = new kakao.maps.Marker({
@@ -261,4 +261,4 @@ var marker16 = new kakao.maps.Marker({
 
 
 marker16.setMap(map16);
-
+//서브웨이 부평점
