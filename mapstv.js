@@ -12,7 +12,7 @@ var markerPosition3  = new kakao.maps.LatLng(37.449299, 126.703753);
 var marker3 = new kakao.maps.Marker({
     position: markerPosition3
 });
-
+//금봉텐동
 
 marker3.setMap(map3);
 
@@ -57,13 +57,13 @@ marker5.setMap(map5);
 
 var mapContainer6 = document.getElementById('map6'),
     mapOption6 = { 
-        center: new kakao.maps.LatLng(37.45078375086212, 126.86336227839347),
+        center: new kakao.maps.LatLng(37.45078, 126.86337),
         level: 3
     };
 var map6 = new kakao.maps.Map(mapContainer6, mapOption6);
 
 
-var markerPosition6  = new kakao.maps.LatLng(37.45078375086212, 126.86336227839347); 
+var markerPosition6  = new kakao.maps.LatLng(37.45078, 126.86337); 
 
 
 var marker6 = new kakao.maps.Marker({
@@ -72,7 +72,7 @@ var marker6 = new kakao.maps.Marker({
 
 
 marker6.setMap(map6);
-
+//양평골
 
 var mapContainer7 = document.getElementById('map7'),
     mapOption7 = { 
@@ -96,31 +96,31 @@ marker7.setMap(map7);
 
 var mapContainer8 = document.getElementById('map8'),
     mapOption8 = { 
-        center: new kakao.maps.LatLng(37.4920238334788, 126.8575354174912),
+        center: new kakao.maps.LatLng(37.47369, 126.867),
         level: 3
     };
 var map8 = new kakao.maps.Map(mapContainer8, mapOption8);
 
 
-var markerPosition8  = new kakao.maps.LatLng(37.4920238334788, 126.8575354174912); 
+var markerPosition8  = new kakao.maps.LatLng(37.47369, 126.867); 
 
 
 var marker8 = new kakao.maps.Marker({
     position: markerPosition8
 });
-
+//맛찬들소금구이
 
 marker8.setMap(map8);
 
 var mapContainer9 = document.getElementById('map9'),
     mapOption9 = { 
-        center: new kakao.maps.LatLng(37.4920238334788, 126.8575354174912),
+        center: new kakao.maps.LatLng(37.4716,126.87081),
         level: 3
     };
 var map9 = new kakao.maps.Map(mapContainer9, mapOption9);
 
 
-var markerPosition9  = new kakao.maps.LatLng(37.4920238334788, 126.8575354174912); 
+var markerPosition9  = new kakao.maps.LatLng(37.4716,126.87081); 
 
 
 var marker9 = new kakao.maps.Marker({
@@ -129,18 +129,18 @@ var marker9 = new kakao.maps.Marker({
 
 
 marker9.setMap(map9);
-
+//김대포실내포차
 
 
 var mapContainer10 = document.getElementById('map10'),
     mapOption10 = { 
-        center: new kakao.maps.LatLng(37.474230570829405, 126.87087227095363),
+        center: new kakao.maps.LatLng(37.47456,126.86760),
         level: 3
     };
 var map10 = new kakao.maps.Map(mapContainer10, mapOption10);
 
 
-var markerPosition10  = new kakao.maps.LatLng(37.474230570829405, 126.87087227095363); 
+var markerPosition10  = new kakao.maps.LatLng(37.47456,126.86760); 
 
 
 var marker10 = new kakao.maps.Marker({
@@ -149,17 +149,17 @@ var marker10 = new kakao.maps.Marker({
 
 
 marker10.setMap(map10);
-
+//김태완스시
 
 var mapContainer11 = document.getElementById('map11'),
     mapOption11 = { 
-        center: new kakao.maps.LatLng(37.4745616183952, 126.86759203503632),
+        center: new kakao.maps.LatLng(37.47437,126.86927),
         level: 3
     };
 var map11 = new kakao.maps.Map(mapContainer11, mapOption11);
 
 
-var markerPosition11  = new kakao.maps.LatLng(37.4745616183952, 126.86759203503632); 
+var markerPosition11  = new kakao.maps.LatLng(37.47437,126.86927); 
 
 
 var marker11 = new kakao.maps.Marker({
@@ -168,17 +168,17 @@ var marker11 = new kakao.maps.Marker({
 
 
 marker11.setMap(map11);
-
+//한본삼계탕
 
 var mapContainer12 = document.getElementById('map12'),
     mapOption12 = { 
-        center: new kakao.maps.LatLng(37.47438380304499, 126.86926893912491),
+        center: new kakao.maps.LatLng(37.47504,126.86969),
         level: 3
     };
 var map12 = new kakao.maps.Map(mapContainer12, mapOption12);
 
 
-var markerPosition12 = new kakao.maps.LatLng(37.47438380304499, 126.86926893912491); 
+var markerPosition12 = new kakao.maps.LatLng(37.47504,126.86969); 
 
 
 var marker12 = new kakao.maps.Marker({
@@ -187,7 +187,7 @@ var marker12 = new kakao.maps.Marker({
 
 
 marker12.setMap(map12);
-
+//광명대창집
 
 var mapContainer13 = document.getElementById('map13'),
     mapOption13 = { 
@@ -206,4 +206,59 @@ var marker13 = new kakao.maps.Marker({
 
 
 marker13.setMap(map13);
+
+var mapContainer14 = document.getElementById('map14'),
+    mapOption14 = { 
+        center: new kakao.maps.LatLng(37.44672,126.69905),
+        level: 3
+    };
+var map14 = new kakao.maps.Map(mapContainer14, mapOption14);
+
+
+var markerPosition14 = new kakao.maps.LatLng(37.44672,126.69905); 
+
+
+var marker14 = new kakao.maps.Marker({
+    position: markerPosition14
+});
+
+
+marker14.setMap(map14);
+
+var mapContainer15 = document.getElementById('map15'),
+    mapOption15 = { 
+        center: new kakao.maps.LatLng(37.45646,126.71951),
+        level: 3
+    };
+var map15 = new kakao.maps.Map(mapContainer15, mapOption15);
+
+
+var markerPosition15 = new kakao.maps.LatLng(37.45646,126.71951); 
+
+
+var marker15 = new kakao.maps.Marker({
+    position: markerPosition15
+});
+
+
+marker15.setMap(map15);
+
+
+var mapContainer16 = document.getElementById('map16'),
+    mapOption16 = { 
+        center: new kakao.maps.LatLng(37.49829,126.72104),
+        level: 3
+    };
+var map16 = new kakao.maps.Map(mapContainer16, mapOption16);
+
+
+var markerPosition16 = new kakao.maps.LatLng(37.49829,126.72104); 
+
+
+var marker16 = new kakao.maps.Marker({
+    position: markerPosition16
+});
+
+
+marker16.setMap(map16);
 
