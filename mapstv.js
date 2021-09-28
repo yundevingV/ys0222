@@ -96,13 +96,13 @@ marker7.setMap(map7);
 
 var mapContainer8 = document.getElementById('map8'),
     mapOption8 = { 
-        center: new kakao.maps.LatLng(37.47448, 126.86758),
+        center: new kakao.maps.LatLng(37.47596, 126.86902),
         level: 3
     };
 var map8 = new kakao.maps.Map(mapContainer8, mapOption8);
 
 
-var markerPosition8  = new kakao.maps.LatLng(37.47448, 126.86758); 
+var markerPosition8  = new kakao.maps.LatLng(37.47596, 126.86902); 
 
 
 var marker8 = new kakao.maps.Marker({
