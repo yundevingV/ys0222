@@ -37,9 +37,11 @@ function ys(){
             alert(lucky+  " //  주의!! 하루에 한 번만 하시오");
             
         }
+
         function todolist(){
             window.open("https://cat-jiyoung.github.io/clone-Momentum/");
         }
+        
         function yt(){
             window.open("https://www.youtube.com/?hl=KO");
         }
@@ -100,6 +102,12 @@ function ys(){
 
         function yg(){
             window.open("https://ddr4869.github.io/");        
+        }
+
+
+        
+        function musicroom(){
+            window.open("https://ys0222.github.io/ys0222/musicroom.html");        
         }
 
         $(function(){
