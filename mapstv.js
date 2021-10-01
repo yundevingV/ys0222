@@ -1,3 +1,22 @@
+var mapContainer1 = document.getElementById('sponser'),
+    mapOption1 = { 
+        center: new kakao.maps.LatLng(37.50095,127.03605),
+        level: 3
+    };
+var sponser = new kakao.maps.Map(mapContainer1, mapOption1);
+
+
+var markerPosition1  = new kakao.maps.LatLng(37.50095,127.03605); 
+
+
+var marker1 = new kakao.maps.Marker({
+    position: markerPosition1
+});
+//만권화밥
+
+marker1.setMap(sponser);
+
+
 var mapContainer3 = document.getElementById('map3'),
     mapOption3 = { 
         center: new kakao.maps.LatLng(37.449299, 126.703753),
