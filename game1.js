@@ -4,28 +4,45 @@
     
     var img1 = new Image();
     img1.src = "https://user-images.githubusercontent.com/91381230/135605415-7b80f908-7b68-4ef8-973b-94666efd1902.jpg"
+
+    var img2 = new Image();
+    img2.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dd/Rammus_Render.png"
     
     
 
-    canvas.width = window.innerWidth - 100;
-    canvas.height = window.innerHeight - 100;
+    canvas.width = window.innerWidth ;
+    canvas.height = window.innerHeight -200;
     
+    var a ={
+        x:50,
+        y:50,
+        width:100,
+        height:100,
+        draw()
+        {
+          ctx.fillStyle = "red";
+           ctx.fillRect(this.x,this.y,this.width,this.height);
+        }  
+      }
+      a.draw();
+      
     var dino = {
         x : 10,
         y : 200,
-        width : 30,
+        width :50,
         height : 50,
         draw(){
             ctx.fillStyle = "green";
             ctx.drawImage(img1,this.x,this.y,this.width,this.height);
         }
     }
+    
 
     var timer = 0;
     var cactusmix =[];
     var jumpingTime=0;
     
-    var rn =Math.floor(Math.random()*50)+150;
+   
 
     function dinoframe(){
     animation = requestAnimationFrame(dinoframe);
@@ -33,12 +50,12 @@
     
     ctx.clearRect(0,0, canvas.width, canvas.height);
 
-    if(timer%rn==0){
+    if(timer%160==0){
         var cactus = new Cactus();
         cactusmix.push(cactus);    
     }
     cactusmix.forEach((a, i , o)=>{
-        if(a.x < 0-a.width){
+        if(a.x < 10){
         o.splice(i,1)
     }
         a.x--;
@@ -55,7 +72,7 @@
             dino.y=dino.y+3;
     }    
 }
-    if(jumpingTime>25){
+    if(jumpingTime>30){
         jumping=false;
         jumpingTime=0;
 }
@@ -77,25 +94,43 @@ dinoframe();
     class Cactus {
         constructor() {
             this.x = 500;
-            this.y = 220;
-            this.width = 10;
-            this.height = 30;
+            this.y = 210;
+            this.width = 20;
+            this.height = 40;
         }
         draw() {
-            ctx.fillStyle = 'red';
-            ctx.fillRect(this.x,this.y,this.width,this.height);
+            ctx.fillStyle = '';
+            ctx.drawImage(img2,this.x,this.y,this.width,this.height);
         }
     }
     
     var cactus = new Cactus();
     cactus.draw();
 
+    class Des {
+        obstakcle() {
+            this.x = 500;
+            this.y = 210;
+            this.width = 20;
+            this.height = 60;
+        }
+        draw() {
+            ctx.fillstyle = 'blue';
+            ctx.fillRect(this.x,this.y,this.width,this.height);
+        }
+    }
+    var obs = new Des();
+    obs.draw();
+
+
     function collision(dino,cactus){
-        var xDifference = (cactus.x+10) - (dino.x+dino.width);
+        var xDifference = (cactus.x) - (dino.x+dino.width);
         var yDifference = cactus.y - (dino.y+dino.height);
 
         if(xDifference <0 && yDifference <0){
             ctx.clearRect(0,0,canvas.width,canvas.height);
             cancelAnimationFrame(animation);
+            alert("Game Over");
+           
         };
     }
