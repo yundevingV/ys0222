@@ -8,6 +8,11 @@
     var img2 = new Image();
     img2.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dd/Rammus_Render.png"
     
+    var img3 = new Image();
+    img3.src = "https://user-images.githubusercontent.com/91381230/135748205-c7849fbf-1922-4a0a-aa97-986be14961ca.png"
+
+    var img4 = new Image();
+    img4.src = "https://user-images.githubusercontent.com/91381230/135749135-6b18e9a6-6417-4f03-b95c-39ebab85b950.png"
     
 
     canvas.width = window.innerWidth ;
@@ -59,7 +64,7 @@
         collision(dino,a)
       })
 
-      if(time%110==0){
+      if(time%120==0){
         var obs = new obstackle(); 
         obsmix.push(obs);
     }
@@ -77,7 +82,7 @@
         bigmix.push(big);
     }
     bigmix.forEach((a1, i1 ,o1)=>{
-        if(a1.x < 10){
+        if(a1.x < 15){
             o1.splice(i1,1)
     }
         a1.x=a1.x-10;
@@ -122,7 +127,7 @@ dino.draw();
             this.y = 200;
             this.width = 20;
             this.height = 50;
-            // x+width값과 y.height값을 canvas를 씌운 div 크기를 똑같이 맞춰야 잘 나옴
+            // x+width값과 y+height값을 canvas를 씌운 div 크기를 똑같이 맞춰야 잘 나옴
         }
         draw() {
             ctx.fillStyle = '';
@@ -137,7 +142,7 @@ dino.draw();
         constructor () {
             this.x=480;
             this.y=0;
-            this.width=20;
+            this.width=10;
             this.height=70;
         }
         draw()
@@ -159,7 +164,7 @@ dino.draw();
         }
         draw() {
             ctx.fillStyle = '';
-            ctx.drawImage(img2,this.x,this.y,this.width,this.height);
+            ctx.drawImage(img3,this.x,this.y,this.width,this.height);
         }
     }
 
@@ -195,7 +200,7 @@ dino.draw();
         var xDifference = (obs.x) - (dino.x+dino.width);
         var yDifference = obs.y-dino.y+dino.height;
 
-        if(xDifference <0  && yDifference >0){
+        if(xDifference <0  && yDifference >=0){
             ctx.clearRect(0,0,canvas.width,canvas.height);
             cancelAnimationFrame(animation);
             alert("Game Over");
