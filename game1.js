@@ -13,19 +13,7 @@
     canvas.width = window.innerWidth ;
     canvas.height = window.innerHeight -200;
     
-    var a ={
-        x:50,
-        y:50,
-        width:100,
-        height:100,
-        draw()
-        {
-          ctx.fillStyle = "red";
-           ctx.fillRect(this.x,this.y,this.width,this.height);
-        }  
-      }
-      a.draw();
-      
+    
     var dino = {
         x : 10,
         y : 200,
@@ -39,28 +27,62 @@
     
 
     var timer = 0;
-    var cactusmix =[];
+    var time = 0;
+    var bigtime =0;
+    // 타이머 if문마다 다르게 써야하는거같음
     var jumpingTime=0;
+
     
-   
+
+    var cactusmix =[];
+    var obsmix = [];
+    var bigmix = [];
+    // 배열을 만들어 줌으로써 장애물들이 계속 만들어지게
 
     function dinoframe(){
     animation = requestAnimationFrame(dinoframe);
     timer++;
-    
+    time++;
+    bigtime++;
     ctx.clearRect(0,0, canvas.width, canvas.height);
 
-    if(timer%160==0){
+    if(timer%80==0){
         var cactus = new Cactus();
         cactusmix.push(cactus);    
     }
     cactusmix.forEach((a, i , o)=>{
-        if(a.x < 10){
+        if(a.x < 10){  //어느 좌표에서 사라지는지
         o.splice(i,1)
     }
-        a.x--;
+        a.x=a.x-3; //장애물 이동하는 속도
         a.draw();
         collision(dino,a)
+      })
+
+      if(time%110==0){
+        var obs = new obstackle(); 
+        obsmix.push(obs);
+    }
+    obsmix.forEach((b, c , d)=>{
+        if(b.x < 10){
+        d.splice(c,1)
+    }
+        b.x=b.x-5;
+        b.draw();
+        obscollision(dino,b)
+      })
+
+      if(bigtime%600==0){
+        var big = new Big(); 
+        bigmix.push(big);
+    }
+    bigmix.forEach((a1, i1 ,o1)=>{
+        if(a1.x < 10){
+            o1.splice(i1,1)
+    }
+        a1.x=a1.x-10;
+        a1.draw();
+        bigcollision(dino,a1)
       })
 
     if(jumping == true){
@@ -79,24 +101,28 @@
 // jumopingTime0에서 100은 100만큼 위로 올라간다는 뜻 그리고 100이 넘으면 
 // 다시 내려오기위해서 0으로 초기화
     
-    dino.draw();
+dino.draw();
     }
 
     var jumping = false;
+   
     document.addEventListener('keydown',function(e){
         if(e.code=='Space'){
             jumping = true;
         }
     })
+
    
-dinoframe();
+   
+    dinoframe();
 
     class Cactus {
         constructor() {
             this.x = 500;
-            this.y = 210;
+            this.y = 200;
             this.width = 20;
-            this.height = 40;
+            this.height = 50;
+            // x+width값과 y.height값을 canvas를 씌운 div 크기를 똑같이 맞춰야 잘 나옴
         }
         draw() {
             ctx.fillStyle = '';
@@ -106,31 +132,73 @@ dinoframe();
     
     var cactus = new Cactus();
     cactus.draw();
+    
+    class obstackle {
+        constructor () {
+            this.x=480;
+            this.y=0;
+            this.width=20;
+            this.height=70;
+        }
+        draw()
+        {
+          ctx.fillStyle = "red";
+          ctx.fillRect(this.x,this.y,this.width,this.height);
+        }  
+      }
 
-    class Des {
-        obstakcle() {
-            this.x = 500;
-            this.y = 210;
-            this.width = 20;
-            this.height = 60;
+      var obs = new obstackle(); 
+      obs.draw();
+      
+      class Big {
+        constructor() {
+            this.x = 470;
+            this.y = 100;
+            this.width = 30;
+            this.height = 150;
         }
         draw() {
-            ctx.fillstyle = 'blue';
-            ctx.fillRect(this.x,this.y,this.width,this.height);
+            ctx.fillStyle = '';
+            ctx.drawImage(img2,this.x,this.y,this.width,this.height);
         }
     }
-    var obs = new Des();
-    obs.draw();
 
-
-    function collision(dino,cactus){
-        var xDifference = (cactus.x) - (dino.x+dino.width);
+    var big = new Big();
+    big.draw();
+     
+      function collision(dino,cactus){
+        var xDifference = (cactus.x+10) - (dino.x+dino.width);
         var yDifference = cactus.y - (dino.y+dino.height);
 
         if(xDifference <0 && yDifference <0){
             ctx.clearRect(0,0,canvas.width,canvas.height);
             cancelAnimationFrame(animation);
             alert("Game Over");
-           
-        };
+        
+      }
+    }
+
+    function bigcollision(dino,big){
+        var xDifference = (big.x+10) - (dino.x+dino.width);
+        var yDifference = big.y - (dino.y+dino.height);
+
+        if(xDifference <0 && yDifference <0){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            cancelAnimationFrame(animation);
+            alert("Game Over");
+        
+      }
+    }
+
+        
+    function obscollision(dino,obs){
+        var xDifference = (obs.x) - (dino.x+dino.width);
+        var yDifference = obs.y-dino.y+dino.height;
+
+        if(xDifference <0  && yDifference >0){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            cancelAnimationFrame(animation);
+            alert("Game Over");
+        
+      }
     }
