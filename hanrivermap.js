@@ -1,5 +1,5 @@
 var mapContainer = document.getElementById('map'), 
-var mapContainer = document.getElementById('map'), 
+
     mapOption = { 
         center: new kakao.maps.LatLng(37.51915,126.98310), 
         level: 8
