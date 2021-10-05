@@ -4,11 +4,11 @@
     document.querySelector("iframe").src = `https://www.youtube.com/embed/${obj.attributes[2].nodeValue}`
     console.clear()
 }
-function ys(){
+function han(){
     window.open("https://ys0222.github.io/ys0222/hanriver.html");
    } 
 
-   function han(){
+   function ys(){
     window.open("https://ys0222.github.io/ys0222/profile.html");
    } 
        function km(){
