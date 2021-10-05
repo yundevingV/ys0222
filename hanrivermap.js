@@ -1,4 +1,5 @@
 var mapContainer = document.getElementById('map'), 
+var mapContainer = document.getElementById('map'), 
     mapOption = { 
         center: new kakao.maps.LatLng(37.51915,126.98310), 
         level: 8
@@ -96,3 +97,46 @@ var marker = new kakao.maps.Marker({
 
 marker.setMap(map);
 //씨유 한강 여의도점
+
+var markerPosition = new kakao.maps.LatLng(37.50927,126.99341); 
+
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+marker.setMap(map);
+
+
+var markerPosition = new kakao.maps.LatLng(37.52843,127.02013); 
+
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+marker.setMap(map);
+var markerPosition = new kakao.maps.LatLng(37.51860,127.08959); 
+
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+marker.setMap(map);
+var markerPosition = new kakao.maps.LatLng(37.51942,127.09343); 
+
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+marker.setMap(map);
+var markerPosition = new kakao.maps.LatLng(37.54604,127.12080); 
+
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+marker.setMap(map);
