@@ -18,7 +18,9 @@ function han(){
        function game(){
         window.open("https://ys0222.github.io/ys0222/game.html");
        } 
-
+       function mytodolist(){
+        window.open("https://ys0222.github.io/todolist/");
+       } 
        function menu1(){
         var menu=["짜장면","마라탕","돈가스","김치찌개","회덮밥","초밥"
         ,"피자","헴버거","파스타","치킨","굶기ㅋㅋ!","서브웨이","샐러드","칼국수"
