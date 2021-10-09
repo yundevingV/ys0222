@@ -7,12 +7,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+  input::placeholder {
+  color: rgb(90, 57, 57) ;
+font-family: 'Jua', sans-serif;
+}
+  </style>
   </head>
   <body style="background-color:rgb(40,40,40); color: white;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#" id="top">😁HelloYSWorld👍</a>
+        <a class="navbar-brand" href="#" id="top" style="font-family: 'Jua', sans-serif;">😁HelloYSWorld👍</a>
         <form class="form-inline">
             <ul class="nav justify-content-end">     
                 <li class="nav-item">
@@ -25,31 +33,37 @@
       
        
       </nav>
-
+     
+    
+      <form style="text-align:right; " name=fsearch method=get style="margin:0px;" action="http://www.google.co.kr/search" target="_blank">
+        <input type=hidden name=where value="nexteach">
+        <input style="border-radius:15px;" name=query itemname="검색어" required value="" size="30" placeholder="          궁금한거있으면 검색해봐">
+        <a class="search-btn" href="#">
+        
+        </a>
+        </form>
+    
       <div class="container">
     
         <div style="margin-top:10px;" class="alert alert-primary text-center" role="alert">
 
-           <b> 오늘의 날씨는 ?</b>
+           <b style="font-family: 'Jua', sans-serif;"> 오늘의 날씨는 ?</b>
           </div>
           <div align="center" class="col-md">
-          <div><pre class="clowtemp">🌡:</pre><pre class="chightemp">🌡:</pre></div>
-            
-        
-          <div class="cprobability">☂: </div>
-          <div class="cspeed">🌬: </div>
-          <div> 
-          <div class="cdeg">🚏: </div>
-         
-        </div>
+            <div class="jumbotron jumbotron-fluid" style="background-color:rgb(59, 52, 43); width:300px; border-radius: 100px;">
+              <div class="container">
+                <h3 style="color:rgb(72, 155, 155); text-align:center; font-family: 'Jua', sans-serif;">Today's Weather</h3>
+                <div><pre style="text-align:center; color:white" class="ctemp">🌡:</pre>
+                  </div>
         </div>
     </div>
+  </div></div>
         <hr>
       
 <div class="container">
     
 <div style="margin-top:10px;" class="alert alert-primary text-center" role="alert">
-    <b> 오늘 하루 당신의 운을 시험해보세요!</b>
+    <b style="font-family: 'Jua', sans-serif;"> 오늘 하루 당신의 운을 시험해보세요!</b>
   </div></div>
 
       <div align="center" style="margin-top:50px" class="container">
@@ -64,7 +78,7 @@
         <hr >
         <div class="container">
         <div class="alert alert-primary text-center" role="alert" style="margin-bottom:50px">
-            <b>  편하고 빠르게 이동하세요!</b>
+            <b style="font-family: 'Jua', sans-serif;">  편하고 빠르게 이동하세요!</b>
           </div>
         </div>
         </div>
@@ -178,23 +192,16 @@ Veiw Light Mode
     </div>
 
 
-
-
-    
-
-
-
- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </script>
     <script src=" https://ys0222.github.io/ys0222//js1.js"></script>
     <script src="https://ys0222.github.io/ys0222//darkmode.js">
-        //dark mode
-        </script>
+     //dark mode
+    </script>
         
-        <script src="https://ys0222.github.io/ys0222/weather.js"> </script>
+    <script src="https://ys0222.github.io/ys0222/weather.js"> </script>
 
-            <script src="https://kit.fontawesome.com/b3ce6c87a3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b3ce6c87a3.js" crossorigin="anonymous"></script>
   </body>
 </html>
