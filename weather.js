@@ -8,12 +8,14 @@ var $speed = data.list[0].wind.speed;
 var $deg = data.list[0].wind.deg;
 
 
-$('.clowtemp').append($minTemp + "°C");
-$('.chightemp').append($maxTemp + "°C");
+$('.ctemp').append($minTemp + "°C" +  "&nbsp;~&nbsp;" +
+ $maxTemp +"°C" +
+ "<br>"  + "☂:"  + $probability + "%"
+ + "<br>" + "🌀:" + $speed + "m/s"
+ + "<br>" + "🚏:" + $deg + "°"); 
 
-$('.chumidity').append($humidity + "%");
 
-$('.cprobability').append($probability + "%");	
-$('.cspeed').append($speed + "m/s");	
-$('.cdeg').append($deg + "°");	
+
+
+	
 });
