@@ -17,15 +17,25 @@
 font-family: 'Jua', sans-serif;
 }
   </style>
-  </head>
-  <body style="background-color:rgb(40,40,40); color: white;">
+  </head>s
+  <body style="background-color:rgb(40,40,40); color: white; font-family: 'Jua', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#" id="top" style="font-family: 'Jua', sans-serif;">😁HelloYSWorld👍</a>
         <form class="form-inline">
             <ul class="nav justify-content-end">     
-                <li class="nav-item">
+              <li class="nav-item">
+              <form style="text-align:right; " name=fsearch method=get style="margin:0px;" action="http://www.google.co.kr/search" target="_blank">
+                <input type=hidden name=where value="nexteach">
+                <input style="border-radius:15px;" name=query itemname="검색어" required value="" size="30" placeholder="          궁금한거있으면 검색해봐">
+                <a class="search-btn" href="#">
+                
+                </a>
+                </form>
+              </li>
+              <li class="nav-item">
           
             <button onclick="ys()" class="btn btn-sm" type="button">👩‍💻</button>
+
           </a>
         </li>
       </ul>
@@ -35,19 +45,13 @@ font-family: 'Jua', sans-serif;
       </nav>
      
     
-      <form style="text-align:right; " name=fsearch method=get style="margin:0px;" action="http://www.google.co.kr/search" target="_blank">
-        <input type=hidden name=where value="nexteach">
-        <input style="border-radius:15px;" name=query itemname="검색어" required value="" size="30" placeholder="          궁금한거있으면 검색해봐">
-        <a class="search-btn" href="#">
-        
-        </a>
-        </form>
+   
     
       <div class="container">
     
-        <div style="margin-top:10px;" class="alert alert-primary text-center" role="alert">
+        <div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert">
 
-           <b style="font-family: 'Jua', sans-serif;"> 오늘의 날씨는 ?</b>
+           <b style="font-family: 'Jua', sans-serif; "> 오늘의 날씨는 ?</b>
           </div>
           <div align="center" class="col-md">
             <div class="jumbotron jumbotron-fluid" style="background-color:rgb(59, 52, 43); width:300px; border-radius: 100px;">
@@ -62,7 +66,7 @@ font-family: 'Jua', sans-serif;
       
 <div class="container">
     
-<div style="margin-top:10px;" class="alert alert-primary text-center" role="alert">
+<div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert">
     <b style="font-family: 'Jua', sans-serif;"> 오늘 하루 당신의 운을 시험해보세요!</b>
   </div></div>
 
@@ -77,8 +81,8 @@ font-family: 'Jua', sans-serif;
         </div>      
         <hr >
         <div class="container">
-        <div class="alert alert-primary text-center" role="alert" style="margin-bottom:50px">
-            <b style="font-family: 'Jua', sans-serif;">  편하고 빠르게 이동하세요!</b>
+        <div class="alert alert-primary text-center" role="alert" style="border-radius:7px; margin-bottom:50px">
+            <b style=" font-family: 'Jua', sans-serif; ">  편하고 빠르게 이동하세요!</b>
           </div>
         </div>
         </div>
@@ -192,6 +196,13 @@ Veiw Light Mode
     </div>
 
 
+
+
+    
+
+
+
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </script>
