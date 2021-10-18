@@ -17,7 +17,7 @@
 font-family: 'Jua', sans-serif;
 }
   </style>
-  </head>s
+  </head>
   <body style="background-color:rgb(40,40,40); color: white; font-family: 'Jua', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#" id="top" style="font-family: 'Jua', sans-serif;">😁HelloYSWorld👍</a>
@@ -84,9 +84,7 @@ font-family: 'Jua', sans-serif;
         <div class="alert alert-primary text-center" role="alert" style="border-radius:7px; margin-bottom:50px">
             <b style=" font-family: 'Jua', sans-serif; ">  편하고 빠르게 이동하세요!</b>
           </div>
-        </div>
-        </div>
-        <div class="container">
+        
     <div align="center" class="col-md">
     <button class="btn btn-outline-success" onclick ="yt()"><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
     <button class="btn btn-outline-success" onclick ="lol()"><i class="fas fa-search"></i></button>
@@ -96,7 +94,8 @@ font-family: 'Jua', sans-serif;
     <button class="btn btn-outline-success" onclick ="sc()"><i class="fas fa-futbol"></i></button>
     <button class="btn btn-outline-success" onclick ="han()"><i class="fas fa-store"></i></button>
     </div>
-    
+  </div>
+
 
     <div align="center" class="col-md">
         <button class="btn btn-outline-success" onclick ="btc()"><i class="fab fa-bitcoin"></i></button>
@@ -109,6 +108,40 @@ font-family: 'Jua', sans-serif;
 </div>
   </div>
 </div>
+    <hr><div class="container">
+      <div class="alert alert-primary text-center" role="alert" style="border-radius:7px; margin-bottom:50px">
+        <b style=" font-family: 'Jua', sans-serif; "> 📈제작자의 관심 코인📈</b>
+      </div>
+<table><tr>
+     <td> <div class="tradingview-widget-container">
+        <div id="tradingview_b8499"></div>
+        <div class="tradingview-widget-copyright">TradingView 제공 <a href="https://kr.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT 차트</span></a></div>
+      </div></td>
+<td><div class="tradingview-widget-container">
+  <div id="tradingview_98a22"></div>
+
+  <div class="tradingview-widget-copyright">TradingView 제공 <a href="https://kr.tradingview.com/symbols/ETHUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">ETHUSDT 차트</span></a></div>
+</div>
+</td>
+<td>
+  <div class="tradingview-widget-container">
+    <div id="tradingview_9ac81"></div>
+    <div class="tradingview-widget-copyright">TradingView 제공 <a href="https://kr.tradingview.com/symbols/CTSIUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">CTSIUSDT 차트</span></a></div>
+</td>
+<td>
+ <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_f7777"></div>
+  <div class="tradingview-widget-copyright">TradingView 제공 <a href="https://kr.tradingview.com/symbols/KRX-005930/" rel="noopener" target="_blank"><span class="blue-text">삼성전자 차트</span></a></div>
+ 
+</div>
+<!-- TradingView Widget END -->
+
+</td>
+
+</tr>
+</table>
+
     <hr>
     <div class="container">
   <table class="table table-hover">
@@ -196,14 +229,102 @@ Veiw Light Mode
     </div>
 
 
-
-
     
 
 
+    <script type = "text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type = "text/javascript">
+    
+    new TradingView.widget(
+    {
+    "width": 300,
+    "height": 300,
+    "symbol": "BINANCE:BTCUSDT",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "1",
+    "locale": "kr",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": false,
+    "allow_symbol_change": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650",
+    "container_id": "tradingview_b8499"
+    }
+    );
+    </script>
+     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+     <script type="text/javascript">
+     new TradingView.widget(
+     {
+     "width": 300,
+     "height": 300,
+     "symbol": "BINANCE:ETHUSDT",
+     "interval": "D",
+     "timezone": "Etc/UTC",
+     "theme": "dark",
+     "style": "1",
+     "locale": "kr",
+     "toolbar_bg": "#f1f3f6",
+     "enable_publishing": false,
+     "allow_symbol_change": true,
+     "show_popup_button": true,
+     "popup_width": "1000",
+     "popup_height": "650",
+     "container_id": "tradingview_98a22"
+   }
+     );
+     </script>
+     
+   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+   <script type="text/javascript">
+   new TradingView.widget(
+   {
+   "width": 300,
+   "height": 300,
+   "symbol": "KRX:005930",
+   "interval": "D",
+   "timezone": "Etc/UTC",
+   "theme": "dark",
+   "style": "1",
+   "locale": "kr",
+   "toolbar_bg": "#f1f3f6",
+   "enable_publishing": false,
+   "allow_symbol_change": true,
+   "show_popup_button": true,
+   "popup_width": "1000",
+   "popup_height": "650",
+   "container_id": "tradingview_f7777"
+ }
+   );
+   </script>
 
- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 300,
+  "height": 300,
+  "symbol": "BINANCE:CTSIUSDT",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "kr",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "show_popup_button": true,
+  "popup_width": "1000",
+  "popup_height": "650",
+  "container_id": "tradingview_9ac81"
+}
+  );
+  </script>
+</div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </script>
     <script src=" https://ys0222.github.io/ys0222//js1.js"></script>
