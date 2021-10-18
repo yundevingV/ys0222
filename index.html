@@ -24,17 +24,10 @@ font-family: 'Jua', sans-serif;
         <form class="form-inline">
             <ul class="nav justify-content-end">     
               <li class="nav-item">
-              <form style="text-align:right; " name=fsearch method=get style="margin:0px;" action="http://www.google.co.kr/search" target="_blank">
-                <input type=hidden name=where value="nexteach">
-                <input style="border-radius:15px;" name=query itemname="검색어" required value="" size="30" placeholder="          궁금한거있으면 검색해봐">
-                <a class="search-btn" href="#">
-                
-                </a>
-                </form>
+             
               </li>
               <li class="nav-item">
           
-            <button onclick="ys()" class="btn btn-sm" type="button">👩‍💻</button>
 
           </a>
         </li>
@@ -43,7 +36,9 @@ font-family: 'Jua', sans-serif;
       
        
       </nav>
-     
+      <div style="text-align:right">
+      <button onclick="ys()" class="btn btn-sm" type="button">👩‍💻</button>
+    </div>
     
    
     
@@ -81,11 +76,18 @@ font-family: 'Jua', sans-serif;
         </div>      
         <hr >
         <div class="container">
-        <div class="alert alert-primary text-center" role="alert" style="border-radius:7px; margin-bottom:50px">
+        <div class="alert alert-primary text-center" role="alert" style="border-radius:7px; margin-bottom:10px">
             <b style=" font-family: 'Jua', sans-serif; ">  편하고 빠르게 이동하세요!</b>
           </div>
         
     <div align="center" class="col-md">
+      <form  name=fsearch method=get style="margin-top :5px; margin-bottom : 15px;" action="http://www.google.co.kr/search" target="_blank">
+        <input type=hidden name=where value="nexteach">
+        <input style="border-radius:15px;" name=query itemname="검색어" required value="" size="30" placeholder="          궁금한거있으면 검색해봐">
+        <a class="search-btn" href="#">
+        
+        </a>
+        </form>
     <button class="btn btn-outline-success" onclick ="yt()"><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
     <button class="btn btn-outline-success" onclick ="lol()"><i class="fas fa-search"></i></button>
     <button class="btn btn-outline-success" onclick ="google()"><i class="fab fa-google"></i></button>
