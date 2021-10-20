@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ko">
   <head>
@@ -16,6 +17,23 @@
   color: rgb(90, 57, 57) ;
 font-family: 'Jua', sans-serif;
 }
+#color_bg {
+	width: 300px;
+	height: 300px;
+	background-color: black;
+}
+
+#btn {
+	width: 100px;
+	height: 30px;
+	
+	
+	background-color: black;
+	color: #ffffff;
+
+	font-size: 12px;
+}
+    
   </style>
   </head>
   <body style="background-color:rgb(40,40,40); color: white; font-family: 'Jua', sans-serif;">
@@ -65,8 +83,12 @@ font-family: 'Jua', sans-serif;
     <b style="font-family: 'Jua', sans-serif;"> 오늘 하루 당신의 운을 시험해보세요!</b>
   </div></div>
 
+    <div class="container" id="color_bg">
+      <button style="margin-left:88px; margin-top:270px;" id="btn" type="button">오늘의 운세보기 </button>
+
+  </div>
       <div align="center" style="margin-top:50px" class="container">
-        
+
        
             <button class="btn btn-outline-success" type="button" onclick ="menu1()">🍴</button>
             <button class="btn btn-outline-success" type="button" onclick ="coffee()">☕</button>
@@ -131,13 +153,11 @@ font-family: 'Jua', sans-serif;
     <div class="tradingview-widget-copyright">TradingView 제공 <a href="https://kr.tradingview.com/symbols/CTSIUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">CTSIUSDT 차트</span></a></div>
 </td>
 <td>
- <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div id="tradingview_f7777"></div>
   <div class="tradingview-widget-copyright">TradingView 제공 <a href="https://kr.tradingview.com/symbols/KRX-005930/" rel="noopener" target="_blank"><span class="blue-text">삼성전자 차트</span></a></div>
  
 </div>
-<!-- TradingView Widget END -->
 
 </td>
 
@@ -230,7 +250,61 @@ Veiw Light Mode
     <a href="#top"><img style ="width:50px; height:50px;" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dd/Rammus_Render.png"></a></div>
     </div>
 
-
+    
+<script>
+  let colors = [
+  'red',	
+  'orange', 
+  'yellow',
+  'green', 
+  'blue', 
+  'purple'
+  ];
+  
+  let bg = document.getElementById('color_bg');
+  
+  btn.addEventListener('click', function(){
+    
+    let random = Math.floor(Math.random() * colors.length)
+    bg.style.backgroundColor = colors[random];
+    alert('긍적적 의미를 가까이하고 부정적 의미를 멀리하세요!')
+    switch (random) {
+      case 0 :
+        alert('빨강(RED)');
+        alert('긍정적 의미 : 행동, 에너지, 스피드, 적극적인, 자신있는, 에너지있는, 자극이 되는, 열정적인, 격려, 강함');
+        alert('부정적 의미 : 공격적인, 거만함, 횡포, 피곤함, 화, 급한 성향, 잔인한, 폭력');
+        break;
+        case 1 :
+        alert('주황(ORANGE)');
+        alert('긍정적 의미 : 사회적인, 긍정적인, 자존감있는, 화려한, 외향적인, 창의적인');
+        alert('부정적 의미 : 얄팍한, 진실되지 못한, 의존적인, 제 멋대로 하는');
+        break;
+        case 2 :
+        alert('노랑(YELLOW)');
+        alert('긍정적 의미 : 긍정적, 쾌할함, 열정, 재미, 명랑함, 자신감, 독창성');
+        alert('부정적 의미 : 비판적이고 남을 판단, 지나치게 분석적, 성격이 급함, 자만심, 비관적');
+        break;
+        case 3 :
+        alert('초록(GRENN)');
+        alert('긍정적 의미 : 성장, 활력, 부활, 자기의존, 신뢰, 독립적임, 자연친화적');
+        alert('부정적 의미 : 소유욕이 강함, 물질적임, 무관심함, 질투, 이기적임, 탐욕스러움, 구두쇠');
+        break;
+        case 4 :
+        alert('파랑(BLUE)');
+        alert('긍정적 의미 : 충성심, 믿음, 진실성, 요령있는, 책임감, 보수성, 인내, 돌봄, 이상주의적');
+        alert('부정적 의미 : 융통성 없음, 기만적인, 악의적인, 슬픔, 수동적, 독선적, 미신저인, 감정적으로 불안정, 냉담함');
+        break;
+        case 5 :
+        alert('보라(PURPLE)');
+        alert('긍정적 의미 : 비범하고 개성적, 창의적, 독창적, 초자연적인, 직관적인, 인도주의');
+        alert('부정적 의미 : 미성숙, 비현실적인, 냉소적인, 냉담한, 거만한, 오만한, 사기를침');
+  
+        break;
+    }
+      
+  })
+  
+  </script>
     
 
 
