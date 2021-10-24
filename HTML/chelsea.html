@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<style>
+
+.container{
+  width: 640px;
+  margin: 0 auto;
+  background-image : url("https://user-images.githubusercontent.com/91381230/138584761-cfc4cf63-f9a0-444b-a4ad-e2c38abd6eb5.png");
+}
+h1{
+  text-align: center;
+}
+.album{
+  height: 500px;
+  width: 616px;
+  overflow: hidden;
+}
+.images{
+  position: relative;
+  display: flex;
+  height: 400px;
+}
+img{
+  width :640px;
+  height: 500px;
+
+}
+button{
+  width: 80px; height: 30px;
+  border: none;
+  color: white;
+  background-color : rgb(138, 210, 212);
+}
+b {
+  color : blue;
+}
+
+#prev{
+  float: left;
+}
+#next{
+  float: right;
+}
+</style>
+    </head>
+ <body>
+  <h1><b>Chelsea Gallery</b></h1>
+  <div class="container">
+   
+    <div class="album">
+      <div class="images">
+        <img src="https://user-images.githubusercontent.com/91381230/138584210-a65bcc6a-e465-4385-9b14-87f05ed1dd3a.png" alt="1">
+        <img src="https://user-images.githubusercontent.com/91381230/138584214-f7c4aea4-bad4-4351-9a7b-3a5607f4fb2a.png" alt="2" >
+        <img src="https://user-images.githubusercontent.com/91381230/138584219-0ed83b58-b439-4453-940f-697f7d125cc2.png" alt="3" >
+        <img src="https://user-images.githubusercontent.com/91381230/138584229-ac54024c-e94b-44aa-9374-c8f0c9428dce.png" alt="4">
+        <img src="https://user-images.githubusercontent.com/91381230/138584239-f3226474-24ad-4df8-ab57-7ccbb7e928bc.png" alt="5">
+      </div>
+    </div>
+    
+ <button id="prev" class="btn btn-sm">⬅</button>
+    <button id="next" class="btn btn-sm">➡</button>  
+  
+    <script>
+
+let postion = 0;
+//이미지의 위치
+const IMAGE_WIDTH = 50;
+//이미지 이동범위
+const prevBtn = document.querySelector("#prev")
+const nextBtn = document.querySelector("#next")
+const images = document.querySelector(".images")
+//버튼 선택자 + 이미지 이동선택자
+ 
+function prev()
+{
+    postion += IMAGE_WIDTH;
+    // 위치를 50씩 오른쪽으로 이동
+    images.style.transform = `translateX(${postion}px)`;
+    //images를 50px만큼 이동
+  }
+
+function next()
+  {
+    postion -= IMAGE_WIDTH;
+    // 위치를 50씩 왼쪽으로 이동
+    images.style.transform = `translateX(${postion}px)`;
+    //images를 50px만큼 이동
+
+  }
+  
+ 
+function init(){
+  prevBtn.addEventListener("click", prev)
+  nextBtn.addEventListener("click", next)
+};
+ 
+init();
+</script>
+</body>
+
+</html>
