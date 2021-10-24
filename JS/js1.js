@@ -5,18 +5,18 @@
     console.clear()
 }
 function han(){
-    window.open("https://ys0222.github.io/ys0222/hanriver.html");
+    window.open("https://ys0222.github.io/ys0222/HTML/hanriver.html");
    } 
 
    function ys(){
-    window.open("https://ys0222.github.io/ys0222/profile.html");
+    window.open("https://ys0222.github.io/ys0222/HTML/profile.html");
    } 
        function km(){
         window.open("https://map.kakao.com/");
        } 
       
        function game(){
-        window.open("https://ys0222.github.io/ys0222/game.html");
+        window.open("https://ys0222.github.io/ys0222/HTML/game.html");
        } 
        function mytodolist(){
         window.open("https://ys0222.github.io/todolist/");
@@ -67,10 +67,11 @@ function han(){
         function sc(){
             window.open("http://yjtv365.com/");        
         }
-        function folder(){
-            window.open("C:/Users/user/Desktop/YS");      
+        
+        function chelsea(){
+           let url = ("https://ys0222.github.io/ys0222/HTML/chelsea.html");
+           windoow.open(url);        
         }
- 
         function maple(){
             window.open("C:/Users/user/Desktop/GameLauncher.exe");        
         }
