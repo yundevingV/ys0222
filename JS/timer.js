@@ -1,12 +1,6 @@
-var timer=0;
+let timer = 0;
 
-var sec = "";
-
-var x =setInterval(function(){
-    
-    sec = parseInt(timer/5);
-
-    document.getElementById("demo").innerHTML = sec;
-    timer++;
-
+let x =setInterval(function(){
+  timer =timer +9;
+  document.getElementById("demo").innerHTML = timer;
 }, 1000);
