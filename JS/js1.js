@@ -16,7 +16,7 @@ function han(){
        } 
       
        function game(){
-        window.open("https://ys0222.github.io/ys0222/HTML/game.html");
+        window.open("https://ys0222.github.io/ys0222/HTML/dinyong.html");
        } 
        function mytodolist(){
         window.open("https://ys0222.github.io/todolist/");
