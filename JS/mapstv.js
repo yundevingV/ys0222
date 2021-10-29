@@ -281,3 +281,22 @@ var marker16 = new kakao.maps.Marker({
 
 marker16.setMap(map16);
 //서브웨이 부평점
+
+var mapContainer17 = document.getElementById('map17'),
+    mapOption17 = { 
+        center: new kakao.maps.LatLng(37.39038, 126.95296),
+        level: 3
+    };
+var map17 = new kakao.maps.Map(mapContainer17, mapOption17);
+
+
+var markerPosition17 = new kakao.maps.LatLng(37.39038, 126.95296); 
+
+
+var marker17 = new kakao.maps.Marker({
+    position: markerPosition17
+});
+
+
+marker17.setMap(map17);
+//몬스터규카츠
