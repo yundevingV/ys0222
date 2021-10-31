@@ -67,7 +67,9 @@ function han(){
         function sc(){
             window.open("http://yjtv365.com/");        
         }
-        
+        function fifacal(){
+            window.open("https://ys0222.github.io/ys0222/HTML/fifacal.html");        
+        }
         function chelsea(){
            let url = ("https://ys0222.github.io/ys0222/HTML/chelsea.html");
            windoow.open(url);        
