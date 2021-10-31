@@ -56,7 +56,6 @@ text-align : center;
        
       </nav>
       <div style="text-align:right">
-      <button onclick="ys()" class="btn btn-sm" type="button">👩‍💻</button>
     </div>
     
    
@@ -124,8 +123,9 @@ text-align : center;
 
 
     <div align="center" class="col-md">
-        <button class="btn btn-outline-success" onclick ="btc()"><i class="fab fa-bitcoin"></i></button>
-        <button onclick ="game()" class="btn btn-outline-success"><i class="fas fa-gamepad"></i></button>     
+    <button class="btn btn-outline-success" onclick ="btc()"><i class="fab fa-bitcoin"></i></button>
+    <button onclick ="game()" class="btn btn-outline-success"><i class="fas fa-gamepad"></i></button>     
+    <button onclick ="fifacal()" class="btn btn-outline-success">💸</button>     
     <button onclick ="y1()" class="btn btn-outline-success">🌆</button>
     <button onclick ="y2()" class="btn btn-outline-success">🎼</button>
     <button onclick ="y3()" class="btn btn-outline-success">🎶</button>
@@ -167,6 +167,10 @@ text-align : center;
 </table>
 
     <hr>
+    <div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert">
+
+      <b style="font-family: 'Jua', sans-serif; "> 맛있는 메뉴들의 열량은?</b>
+     </div>
     <div class="container">
   <table class="table table-hover">
    
@@ -239,9 +243,6 @@ text-align : center;
 
 <hr >
 
-   
-
-
 <div style="position:fixed; bottom : 5px; right:60px ;">
 <button id="converter" class="btn btn-dark" type="button" value="day" onclick="convertDayNight(this);">
 Veiw Light Mode
@@ -261,7 +262,8 @@ Veiw Light Mode
       <div style=" text-align : center; color: black; ">
         <a style="text-decoration:none; color:black;" href="">채용문의</a> | 
         <a style="text-decoration:none; color:black;" href="">사업소개</a> |
-        <a style="text-decoration:none; color:black;" href="https://ys0222.github.io/ys0222/HTML/chelsea.html">공식 후원사</a>
+        <a style="text-decoration:none; color:black;" href="https://ys0222.github.io/ys0222/HTML/chelsea.html">공식 후원사 |</a>
+        <a onclick="ys()" style="text-decoration:none; color:black;" href="">대표 이사 : 이윤성</a>
         <b style="margin-left:50px;"> ⓒ YS Corp.</b>
       </div>
     </footer>
@@ -274,6 +276,7 @@ Veiw Light Mode
   'red',	
   'orange', 
   'yellow',
+
   'green', 
   'blue', 
   'purple'
