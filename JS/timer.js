@@ -1,9 +1,14 @@
-let timer = 0;
+var score = 0;
 
-let x =setInterval(function(){
-  timer =timer +9;
-  document.getElementById("demo").innerHTML = timer;
-  if (timer >500)
-  {timer =timer +5;
-    document.getElementById("demo").innerHTML = timer;}
-}, 1000);
+var x =setInterval(function(){
+            score =score +9;
+            document.getElementById("demo").innerHTML = score;
+            {
+            if (score > 300)
+            {score = score +3;
+            document.document.getElementById("demo").innerHTML = score;
+
+            if (score >500)
+            {score =score +5;
+            document.getElementById("demo").innerHTML = score;}
+            }}}, 1000);
