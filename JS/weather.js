@@ -5,7 +5,6 @@ $.getJSON('http://api.openweathermap.org/data/2.5/forecast?id=1835848&APPID=0ef0
 ,function(data){
 var minTemp = data.list[0].main.temp_min;
 var maxTemp = data.list[0].main.temp_max;
-var humidity = data.list[0].main.humidity;
 var probability = data.list[0].clouds.all;
 var speed = data.list[0].wind.speed;
 var deg = data.list[0].wind.deg;
