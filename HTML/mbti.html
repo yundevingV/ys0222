@@ -1,0 +1,216 @@
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>LocalStorage Sample</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<style>
+
+</style>
+</head>
+<body>
+    <div class="container">
+  <div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert"><h2>16Personalities 검사가 너무 정확해 "살짝 소름이 돋을 정도예요"라고 성격 유형 검사를 마친 한 참여자는 말했습니다.</h2></div>
+    <div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert"><h3>쉽고 간단하면서도 정확한 성격 유형 검사를 통해 당신이 누구이며, 왜 그러한 특정 행동 성향을 보이는지 확인하십시오.</h3>
+</div>
+  
+<div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert"> 
+검사하기
+</div>
+  
+<h2>다른 사람들에게 자신을 소개하는것을 어려워 합니다.</h2>
+    
+
+  매우동의<input type="radio" name="ei1" value="1">
+  동의<input type="radio" name="ei1" value="2">
+  조금동의<input type="radio" name="ei1" value="3">
+  보통<input type="radio" name="ei1" value="4">
+  조금비동의<input type="radio" name="ei1" value="5">
+  비동의<input type="radio" name="ei1" value="6">
+  매우비동의<input type="radio" name="ei1" value="7">
+  
+  <h2>보통 대화를 먼저 시작하지 않습니다.
+</h2>
+  매우동의<input type="radio" name="ei2" value="1">
+  동의<input type="radio" name="ei2" value="2">
+  조금동의<input type="radio" name="ei2" value="3">
+  보통<input type="radio" name="ei2" value="4">
+  조금비동의<input type="radio" name="ei2" value="5">
+  비동의<input type="radio" name="ei2" value="6">
+  매우비동의<input type="radio" name="ei2" value="7">
+
+  <h2>NS</h2>
+  매우동의<input type="radio" name="ns1" value="1">
+  동의<input type="radio" name="ns1" value="2">
+  조금동의<input type="radio" name="ns1" value="3">
+  보통<input type="radio" name="ns1" value="4">
+  조금비동의<input type="radio" name="ns1" value="5">
+  비동의<input type="radio" name="ns1" value="6">
+  매우비동의<input type="radio" name="ns1" value="7">
+  
+  <h2>NS</h2>
+  매우동의<input type="radio" name="ns2" value="1">
+  동의<input type="radio" name="ns2" value="2">
+  조금동의<input type="radio" name="ns2" value="3">
+  보통<input type="radio" name="ns2" value="4">
+  조금비동의<input type="radio" name="ns2" value="5">
+  비동의<input type="radio" name="ns2" value="6">
+  매우비동의<input type="radio" name="ns2" value="7">
+
+  <h2>FT</h2>
+  매우동의<input type="radio" name="ft1" value="1">
+  동의<input type="radio" name="ft1" value="2">
+  조금동의<input type="radio" name="ft1" value="3">
+  보통<input type="radio" name="ft1" value="4">
+  조금비동의<input type="radio" name="ft1" value="5">
+  비동의<input type="radio" name="ft1" value="6">
+  매우비동의<input type="radio" name="ft1" value="7">
+  
+  <h2>FT</h2>
+  매우동의<input type="radio" name="ft2" value="1">
+  동의<input type="radio" name="ft2" value="2">
+  조금동의<input type="radio" name="ft2" value="3">
+  보통<input type="radio" name="ft2" value="4">
+  조금비동의<input type="radio" name="ft2" value="5">
+  비동의<input type="radio" name="ft2" value="6">
+  매우비동의<input type="radio" name="ft2" value="7">
+
+  <h2>JP</h2>
+  매우동의<input type="radio" name="jp1" value="1">
+  동의<input type="radio" name="jp1" value="2">
+  조금동의<input type="radio" name="jp1" value="3">
+  보통<input type="radio" name="jp1" value="4">
+  조금비동의<input type="radio" name="jp1" value="5">
+  비동의<input type="radio" name="jp1" value="6">
+  매우비동의<input type="radio" name="jp1" value="7">
+  
+  <h2>JP</h2>
+  매우동의<input type="radio" name="jp2" value="1">
+  동의<input type="radio" name="jp2" value="2">
+  조금동의<input type="radio" name="jp2" value="3">
+  보통<input type="radio" name="jp2" value="4">
+  조금비동의<input type="radio" name="jp2" value="5">
+  비동의<input type="radio" name="jp2" value="6">
+  매우비동의<input type="radio" name="jp2" value="7">
+
+<input type="button" value="전송" id="send" class="btn">
+
+<div id="print1">
+</div>
+
+<script>
+
+window.onload = function() {
+document.getElementById('send').onclick = function(){
+
+var ei1choice = document.getElementsByName('ei1');
+var ei1 ; 
+for(var i=0; i<ei1choice.length; i++) {
+    if(ei1choice[i].checked == true) {
+        ei1 = ei1choice[i].value;
+    }
+}
+
+var ei2choice = document.getElementsByName('ei2');
+var ei2 ; 
+for(var i=0; i<ei2choice.length; i++) {
+    if(ei2choice[i].checked == true) {
+        ei2 = ei2choice[i].value;
+    }
+}
+
+var ns1choice = document.getElementsByName('ns1');
+var ns1 ; 
+for(var i=0; i<ns1choice.length; i++) {
+    if(ns1choice[i].checked == true) {
+        ns1 = ns1choice[i].value;
+    }
+}
+
+var ns2choice = document.getElementsByName('ns2');
+var ns2 ; 
+for(var i=0; i<ns2choice.length; i++) {
+    if(ns2choice[i].checked == true) {
+        ns2 = ns2choice[i].value;
+    }
+}
+
+var ft1choice = document.getElementsByName('ft1');
+var ft1 ; 
+for(var i=0; i<ft1choice.length; i++) {
+    if(ft1choice[i].checked == true) {
+        ft1 = ft1choice[i].value;
+    }
+}
+
+var ft2choice = document.getElementsByName('ft2');
+var ft2 ; 
+for(var i=0; i<ft2choice.length; i++) {
+    if(ft2choice[i].checked == true) {
+        ft2 = ft2choice[i].value;
+    }
+}
+
+var jp1choice = document.getElementsByName('jp1');
+var jp1 ; 
+for(var i=0; i<jp1choice.length; i++) {
+    if(jp1choice[i].checked == true) {
+        jp1 = jp1choice[i].value;
+    }
+}
+
+var jp2choice = document.getElementsByName('jp2');
+var jp2 ; 
+for(var i=0; i<jp2choice.length; i++) {
+    if(jp2choice[i].checked == true) {
+        jp2 = jp2choice[i].value;
+    }
+}
+
+
+
+if(parseInt(ei1)+parseInt(ei1)> 8)
+{
+    var a = 'E';
+}
+else if (parseInt(ei1)+parseInt(ei1))
+{
+    alert("다시 ")
+}
+else 
+{
+    var a = 'I';
+}
+if(parseInt(ns1)+parseInt(ns2)> 8)
+{
+    var b = 'N';
+}
+else 
+{
+    var b = 'S';
+}
+if(parseInt(ft1)+parseInt(ft2)> 8)
+{
+    var c = 'F';
+}
+else 
+{
+    var c = 'T';
+}
+if(parseInt(jp1)+parseInt(jp2)> 8)
+{
+    var d = 'J';
+}
+else 
+{
+    var d = 'P';
+}
+document.getElementById('print1').innerHTML = a + b + c + d;
+
+}
+}
+
+
+</script>
+
+</body>
+</html>
