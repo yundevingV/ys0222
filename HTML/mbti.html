@@ -4,7 +4,26 @@
 <title>LocalStorage Sample</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <style>
-
+input[type='radio'] {
+			-webkit-appearance:none;
+			
+			border:1px solid green;
+			border-radius:50%;
+			outline:none;
+			background:#ffffff;
+		}
+		input[type='radio']:before {
+			content:'';
+			display:block;
+			width:100%;
+			height:100%;
+			border-radius:50%;  
+		}
+		input[type='radio']:checked:before {
+			background-image :url("https://user-images.githubusercontent.com/91381230/142149098-0f10a396-3807-421b-afa9-a17cdac01b78.png");
+            background-size : contain;          
+            background-repeat : no-repeat;
+		}
 </style>
 </head>
 <body>
@@ -13,87 +32,87 @@
     <div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert"><h3>쉽고 간단하면서도 정확한 성격 유형 검사를 통해 당신이 누구이며, 왜 그러한 특정 행동 성향을 보이는지 확인하십시오.</h3>
 </div>
   
-<div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert"> 
-검사하기
-</div>
+<div class="container" style="border-radius:100px; width:1000px; height:50px; background :#81e2bd"><p style="text-align : center; font-size:35px;">시작하기</p></div>
+
   
+<div class="container">
 <h2>다른 사람들에게 자신을 소개하는것을 어려워 합니다.</h2>
     
 
-  매우동의<input type="radio" name="ei1" value="1">
-  동의<input type="radio" name="ei1" value="2">
-  조금동의<input type="radio" name="ei1" value="3">
-  보통<input type="radio" name="ei1" value="4">
-  조금비동의<input type="radio" name="ei1" value="5">
-  비동의<input type="radio" name="ei1" value="6">
-  매우비동의<input type="radio" name="ei1" value="7">
+  <input type="radio" name="ei1" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="ei1" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="ei1" value="3" style="width : 60px; height:40px;">
+  <input type="radio" name="ei1" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="ei1" value="5" style="width : 60px; height:40px;">
+  <input type="radio" name="ei1" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="ei1" value="7" style="width : 70px; height:50px;">
   
   <h2>보통 대화를 먼저 시작하지 않습니다.
 </h2>
-  매우동의<input type="radio" name="ei2" value="1">
-  동의<input type="radio" name="ei2" value="2">
-  조금동의<input type="radio" name="ei2" value="3">
-  보통<input type="radio" name="ei2" value="4">
-  조금비동의<input type="radio" name="ei2" value="5">
-  비동의<input type="radio" name="ei2" value="6">
-  매우비동의<input type="radio" name="ei2" value="7">
+  <input type="radio" name="ei2" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="ei2" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="ei2" value="3"style="width : 60px; height:40px;">
+  <input type="radio" name="ei2" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="ei2" value="5" style="width : 60px; height:40px;">
+  <input type="radio" name="ei2" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="ei2" value="7" style="width : 70px; height:50px;">
 
   <h2>NS</h2>
-  매우동의<input type="radio" name="ns1" value="1">
-  동의<input type="radio" name="ns1" value="2">
-  조금동의<input type="radio" name="ns1" value="3">
-  보통<input type="radio" name="ns1" value="4">
-  조금비동의<input type="radio" name="ns1" value="5">
-  비동의<input type="radio" name="ns1" value="6">
-  매우비동의<input type="radio" name="ns1" value="7">
+  <input type="radio" name="ns1" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="ns1" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="ns1" value="3" style="width : 60px; height:40px;">
+  <input type="radio" name="ns1" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="ns1" value="5" style="width : 60px; height:40px;">
+  <input type="radio" name="ns1" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="ns1" value="7" style="width : 70px; height:50px;">
   
   <h2>NS</h2>
-  매우동의<input type="radio" name="ns2" value="1">
-  동의<input type="radio" name="ns2" value="2">
-  조금동의<input type="radio" name="ns2" value="3">
-  보통<input type="radio" name="ns2" value="4">
-  조금비동의<input type="radio" name="ns2" value="5">
-  비동의<input type="radio" name="ns2" value="6">
-  매우비동의<input type="radio" name="ns2" value="7">
+  <input type="radio" name="ns2" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="ns2" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="ns2" value="3" style="width : 60px; height:40px;">
+  <input type="radio" name="ns2" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="ns2" value="5" style="width : 60px; height:40px;">
+  <input type="radio" name="ns2" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="ns2" value="7" style="width : 70px; height:50px;">
 
   <h2>FT</h2>
-  매우동의<input type="radio" name="ft1" value="1">
-  동의<input type="radio" name="ft1" value="2">
-  조금동의<input type="radio" name="ft1" value="3">
-  보통<input type="radio" name="ft1" value="4">
-  조금비동의<input type="radio" name="ft1" value="5">
-  비동의<input type="radio" name="ft1" value="6">
-  매우비동의<input type="radio" name="ft1" value="7">
+  <input type="radio" name="ft1" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="ft1" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="ft1" value="3" style="width : 60px; height:40px;">
+  <input type="radio" name="ft1" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="ft1" value="5" style="width : 60px; height:40px;">
+  <input type="radio" name="ft1" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="ft1" value="7" style="width : 70px; height:50px;">
   
   <h2>FT</h2>
-  매우동의<input type="radio" name="ft2" value="1">
-  동의<input type="radio" name="ft2" value="2">
-  조금동의<input type="radio" name="ft2" value="3">
-  보통<input type="radio" name="ft2" value="4">
-  조금비동의<input type="radio" name="ft2" value="5">
-  비동의<input type="radio" name="ft2" value="6">
-  매우비동의<input type="radio" name="ft2" value="7">
+  <input type="radio" name="ft2" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="ft2" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="ft2" value="3" style="width : 60px; height:40px;">
+  <input type="radio" name="ft2" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="ft2" value="5" style="width : 60px; height:40px;"> 
+  <input type="radio" name="ft2" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="ft2" value="7" style="width : 70px; height:50px;">
 
   <h2>JP</h2>
-  매우동의<input type="radio" name="jp1" value="1">
-  동의<input type="radio" name="jp1" value="2">
-  조금동의<input type="radio" name="jp1" value="3">
-  보통<input type="radio" name="jp1" value="4">
-  조금비동의<input type="radio" name="jp1" value="5">
-  비동의<input type="radio" name="jp1" value="6">
-  매우비동의<input type="radio" name="jp1" value="7">
+  <input type="radio" name="jp1" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="jp1" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="jp1" value="3" style="width : 60px; height:40px;">
+  <input type="radio" name="jp1" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="jp1" value="5" style="width : 60px; height:40px;">
+  <input type="radio" name="jp1" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="jp1" value="7" style="width : 70px; height:50px;">
   
   <h2>JP</h2>
-  매우동의<input type="radio" name="jp2" value="1">
-  동의<input type="radio" name="jp2" value="2">
-  조금동의<input type="radio" name="jp2" value="3">
-  보통<input type="radio" name="jp2" value="4">
-  조금비동의<input type="radio" name="jp2" value="5">
-  비동의<input type="radio" name="jp2" value="6">
-  매우비동의<input type="radio" name="jp2" value="7">
+  <input type="radio" name="jp2" value="1" style="width : 70px; height:50px;">
+  <input type="radio" name="jp2" value="2" style="width : 66px; height:45px;">
+  <input type="radio" name="jp2" value="3" style="width : 60px; height:40px;">
+  <input type="radio" name="jp2" value="4" style="width : 55px; height:35px;">
+  <input type="radio" name="jp2" value="5" style="width : 60px; height:40px;">
+  <input type="radio" name="jp2" value="6" style="width : 66px; height:45px;">
+  <input type="radio" name="jp2" value="7" style="width : 70px; height:50px;">
 
 <input type="button" value="전송" id="send" class="btn">
-
+</div>
 <div id="print1">
 </div>
 
@@ -172,7 +191,7 @@ if(parseInt(ei1)+parseInt(ei1)> 8)
 {
     var a = 'E';
 }
-else if (parseInt(ei1)+parseInt(ei1))
+else if (parseInt(ei1)+parseInt(ei1) ==0)
 {
     alert("다시 ")
 }
@@ -208,6 +227,7 @@ document.getElementById('print1').innerHTML = a + b + c + d;
 
 }
 }
+
 
 
 </script>
