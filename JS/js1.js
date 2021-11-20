@@ -44,7 +44,9 @@ function han(){
             function todolist(){
             window.open("https://cat-jiyoung.github.io/clone-Momentum/");
         }
-        
+        function mbti(){
+            window.open("https://ys0222.github.io/ys0222/HTML/mbtihead.html");
+        }
         function yt(){
             window.open("https://www.youtube.com/?hl=KO");
         }
