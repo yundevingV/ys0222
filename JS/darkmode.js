@@ -8,7 +8,6 @@ var changeBodyColor={
         document.querySelector("body").style.backgroundColor=bodyBackColor;
 },
 };
-//changeBodyColor 객체 생성
 
 function convertDayNight(Self){
     if(self.value=="night"){
