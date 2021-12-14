@@ -53,7 +53,12 @@ body {
     text-align : center;
 
 }
-
+#d {
+    position :absolute;
+        left:50%;
+        top:50%;
+    font-size:30px;
+}
 #qn { 
     text-align : center;
 }
@@ -74,59 +79,12 @@ Who is it??
 하지만 이제 곧 그가 돌아온다!     <br>
 그가 떠나간 기간에도 팬심을 잃지 않은 당신!! <br>
 이 테스트를 잘 해주길 바란다.
-</div>
-
-<div id="c">
-<b id="qn">
-이차노는 뱀띠이다.
-</b>
-<div class="container" style="text-align : center;">
-맞다<input type="radio" name="animal" value="0" id="radio1">
-아니다<input type="radio" name="animal" value="1" id="radio2">
-<hr>
-</div>
-<b id="qn">
-이차노의 집앞 5분거리에 롯데백화점이 있다.
-    </b>
-    <div class="container" style="text-align : center;">
-    맞다<input type="radio" name="house" value="1" id="radio1">
-    아니다<input type="radio" name="house" value="0" id="radio2">
-    
-    </div>
-    <hr>
-<b id="qn">
-이차노는 12월 15일 부로 민간인이 된다.
-            </b>
-            <div class="container" style="text-align : center;">
-            맞다<input type="radio" name="army" value="0" id="radio1">
-            아니다<input type="radio" name="army" value="1" id="radio2">
-            
-</div>
-<hr>
-<b id="qn">
-이차노가 제일 좋아하는 음식은 파스타이다.
-                </b>
-                <div class="container" style="text-align : center;">
-                맞다<input type="radio" name="food" value="1" id="radio1">
-                아니다<input type="radio" name="food" value="0" id="radio2">
-                
-    </div>
-    <hr>
-    <b id="qn">
-        이차노의 롤 주챔피언은 우르곳, 말파이트, 알리스타이다.
-                        </b>
-                        <div class="container" style="text-align : center;">
-                        맞다<input type="radio" name="lol" value="0" id="radio1">
-                        아니다<input type="radio" name="lol" value="1" id="radio2">
-                        
-            </div>
 
 
-<div class="container"
-    style="text-align : center; margin-bottom:10px;">
-    <button id="send" >
-    <span class="submit" id="send">체점하기</span></button> </div>
-     </div>
+</div>
+<div id="d">
+<button onclick ="start()">시작하기</button>
+</div>
 
 </div>    
 </div>
@@ -136,6 +94,9 @@ Who is it??
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src=" https://ys0222.github.io/ys0222/JS/js1.js"></script>
 <script>
+    function start(){
+            window.open("www.naver.com");
+        }
 
 window.onload = function() {
 document.getElementById('send').onclick = function(){
@@ -182,47 +143,47 @@ for(var i=0; i<lolchoice.length; i++) {
 
 if(animal == 0)
 {
-    var a = 0;
+    var a = 1;
 }
 else
 {
-    var a = 1;
+    var a = 0;
 }
 
-if(house == 0)
+if(house == 1)
 {
-    var b = 0;
+    var b = 1;
 }
 else 
 {
-    var b = 1;
+    var b = 0;
 }
 
 if(army == 0)
 {
-    var c = 0;
+    var c = 1;
 }
 else 
 {
-    var c =1;
+    var c =0;
 }
 
-if(food == 0)
+if(food == 1)
 {
-    var d = 0;
+    var d = 1;
 }
 else 
 {
-    var d =1;
+    var d =0;
 }
 
 if( lol == 0)
 { 
-    var e = 0;
+    var e = 1;
 }
 else 
 {
-    var e = 1;
+    var e = 0;
 }
 
 switch (a+b+c+d+e) {
