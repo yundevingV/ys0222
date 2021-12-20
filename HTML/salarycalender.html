@@ -1,0 +1,119 @@
+<html>
+<head>
+<style>
+
+#top
+{
+    text-align : center;
+    width: 50px;
+}
+#sun
+{
+    text-align : center;
+    color:red;
+}
+#sat
+{
+    text-align : center;
+    color:blue;
+}
+#nor
+{
+    text-align : center;
+}
+table {
+  border: 1px solid skyblue;
+  border-collapse: collapse;
+  
+
+}
+th, td{
+    border: 1px solid skyblue;
+    border-collapse: collapse;
+    width: 70px;
+    height:20px
+}
+button {
+padding: 0;
+border: none;
+background: none;
+}
+</style>
+</head>
+
+<body>
+<table >
+    <tr><td colspan="7" id="top">2021년 12월</td></tr>
+<tr>
+    <td id="sun">Sun</td>
+    <td id="nor">Mon</td>
+    <td id="nor">Tue</td>
+    <td id="nor">Web</td>
+    <td id="nor">Thu</td>
+    <td id="nor">Fri</td>
+    <td id="sat">Sat</td>
+</tr>
+
+<tr>
+    <td id="sun"></td>
+    <td id="nor"></td>
+    <td id="nor"></td>
+    <td id="nor"><button>1</button></td>
+    <td id="nor"><button>2</button></td>
+    <td id="nor"><button>3</button></td>
+    <td id="sat"><button>4</button></td>
+</tr>
+
+<tr>
+    <td id="sun"><button>5</button></td>
+    <td id="nor"><button>6</button></td>
+    <td id="nor"><button>7</button></td>
+    <td id="nor"><button>8</button></td>
+    <td id="nor"><button>9</button></td>
+    <td id="nor"><button>10</button></td>
+    <td id="sat"><button>11</button></td>
+</tr>
+
+<tr>
+    <td id="sun"><button>12</button></td>
+    <td id="nor"><button>13</button></td>
+    <td id="nor"><button>14</button></td>
+    <td id="nor"><button>15</button></td>
+    <td id="nor"><button>16</button></td>
+    <td id="nor"><button>17</button></td>
+    <td id="sat"><button>18</button></td>
+</tr>
+
+<tr>
+    <td id="sun"><button>19</button></td>
+    <td id="nor"><button>20</button></td>
+    <td id="nor"><button>21</button></td>
+    <td id="nor"><button>22</button></td>
+    <td id="nor"><button>23</button></td>
+    <td id="nor"><button>24</button></td>
+    <td id="sat"><button>25</button></td>
+</tr>
+
+<tr>
+    <td id="sun"><button onclick="check()">26</button></td>
+    <td id="nor"><button>27</button></td>
+    <td id="nor"><button>28</button></td>
+    <td id="nor"><button>29</button></td>
+    <td id="nor"><button>30</button></td>
+    <td id="nor"><button>31</button></td>
+    <td id="sat"></td>
+</tr>
+
+</table>
+<script>
+
+
+
+function check(){
+    document.getElementSById('26').innerHTML='a';
+
+}
+
+</script>
+</body>
+</html>
