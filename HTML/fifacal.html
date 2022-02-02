@@ -1,75 +1,319 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+<head>
+<title>
+Choose Your Hamburger in Franchise🍔    
+</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
-table {
-    text-align :center;
-    width : 300px;
-    height: 200px;
+body {
+    background-image : url("https://user-images.githubusercontent.com/91381230/143460624-ad6861c5-6519-4111-a03b-01f699c10336.png");
+    background-size: 200px 200px;
+    font-family: 'Jua', sans-serif;
 
-}
-td {
-  padding : 5px 10px;
-  text-align : center;
-}
-input {
-  border : none;
-}
-input::placeholder {
-  
-text-align : center;
-}
-h2{
-  text-align : center;
-}
-thead{
-  text-align : center;
+    }
+    #q{
+        font-size : 130px;
+        font-family: 'Jua', sans-serif;
+    }
+    #qd{
+        background-color :bisque;
+        width:500px;
+        border-radius: 40px;
+        position :absolute;
+        left:5%;
+        top:3%;
+    }
+    #qd1{
+        background-color :bisque;
+        width:1000px;
+        border-radius: 40px;
+        position :absolute;
+        left:7%;
+        top:25%;
+        font-size:25px;
 
-}
+    }
+    #qdq{
+        position :absolute;
+        left:30%;
+        top:50%;
+        font-size:30px;
+    }
+    footer{
+        background-color: black;
+        color : white;
+        height:100px;
+        position :absolute;
+        top : 120%;
+        width:100%;
+    }
 </style>
-    </head>
- <body>
-  <div class="container">
-    <h2></h2>
+</head>
 
-<table type="button" border="3">
-  <thead >
-    피파온라인4 수수료 계산기!
-  </thead>
-<tr> <td colspan="4">
-<input type="text" placeholder="판매 금액 입력" id="display">
-</td>
-</tr>
-<tr >
-<td  onclick="no()">House</td>
-<td onclick="no10()">10%</td><td onclick="no20()">20%</td><td onclick="no30()">30%</td>
-</tr>
-<tr >
-<td onclick="onlytop()">
-Only Top Class
-</td><td onclick="onlytop10()">10%</td><td onclick="onlytop20()">20%</td><td onclick="onlytop30()">30%</td>
-</tr>
-<tr ><td onclick="onlypc()">
- Only PC
-</td><td onclick="onlypc10()">10%</td><td onclick="onlypc20()">20%</td><td onclick="onlypc30()">30%</td>
-</tr>
-<tr ><td onclick="pctop()">
-PC + Top Class
-</td><td onclick="pctop10()">10%</td><td onclick="pctop20()">20%</td><td onclick="pctop30()">30%</td>
-</table>
+<body>
+<div id="qd">
+<span id="q"><b>햄버거??</b></span>
 </div>
-<div class="container">
-<div id="result"></div>
+
+<div id="qd1">
+&nbsp;&nbsp;햄버거는 간 쇠고기를 납작하게 빚은 패티를 그릴이나 직화로 구워 
+양상추나 토마토 등의 채소와 함께 빵 사이의 끼워 먹는 미국식 샌드위치이다.<br>
+현재는 많은 프랜차이즈 가게들이 생겨나면서 다양한 종류의 햄버거를 맛볼 수 있다.<br>
+그런데, 너무 종류가 다양하니 어떤 메뉴를 먹어야 할지 고민이다.
+그래서 이 설문지를 통해 자신이 원하는 니즈를 파악한 후 햄버거를 맛 보면 선택장애를 극복 할 수 있을것이다.
+</div>
+    
+
+<div id="qdq" style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert">
+    <b style="font-family: 'Jua', sans-serif;">
+    어떤 <span style="background-color : yellow">종류</span>의 햄버거를 좋아하나요?
+    </b>
+    <div class="container" style="text-align : center;">
+          고기류의 버거<input type="radio" name="kind" value="a" id="radio1">
+          치킨류의 버거<input type="radio" name="kind" value="b" id="radio2">
+          새우류의 버거<input type="radio" name="kind" value="c" id="radio2">
+        </div>
+        <hr>
+    <b style="font-family: 'Jua', sans-serif;">
+        <span style="background-color : yellow">토핑</span>이 많은 것을 좋아하나요?
+    </b>
+    <div class="container" style="text-align : center;">
+            네<input type="radio" name="more" value="d" id="radio1">
+            아니요<input type="radio" name="more" value="e" id="radio2">
+        </div>
+        <hr>
+
+    <b style="font-family: 'Jua', sans-serif;">
+        <span style="background-color : yellow">커다란</span> 햄버거를 먹을때 불편한가요?
+    </b>
+            <div class="container" style="text-align : center;">
+            네<input type="radio" name="big" value="f" id="radio1">
+            아니요<input type="radio" name="big" value="g" id="radio2">
+           </div>
+        <hr>
+
+           <b style="font-family: 'Jua', sans-serif;">
+            <span style="background-color : yellow">치즈</span>를 좋아하나요?
+            </b>
+                    <div class="container" style="text-align : center;">
+                    네<input type="radio" name="cheese" value="h" id="radio1">
+                    아니요<input type="radio" name="cheese" value="i" id="radio2">
+                   </div>
+                   <hr>
+
+                  
+                           <div class="container"
+    style="text-align : center; margin-bottom:10px;">
+    <button id="send" >
+    <span class="submit" id="send">전송하기</span></button> </div>
+     </div>
 
 
-<script src="https://ys0222.github.io/ys0222/JS/fifacal.js">
+     <footer>
+        <br>
+         <div style="text-align : center; color: white; ">
+           TEL : 010-9523-XX51 | E-MAIL : dbstjd0222@naver.com 
+           | <a style="text-decoration:none; color:white;" href="https://www.op.gg/summoner/userName=%EC%9D%B4%EC%9C%A4%EC%84%B1%EC%86%8C%ED%99%98%EC%82%AC%EB%8B%98">LOL : 이윤성소환사님</a> | FIFA4 : 윤스타님
+         </div>
+         <div style=" text-align : center; color: white; ">
+           <a style="text-decoration:none; color:white;" href="">채용문의</a> | 
+           <a style="text-decoration:none; color:white;" href="">사업소개</a> |
+           <a style="text-decoration:none; color:white;" href="https://ys0222.github.io/ys0222/HTML/chelsea.html">공식 후원사 |</a>
+           <a onclick="ys()" style="text-decoration:none; color:white;" href="">대표 이사 : 이윤성</a>
+           <b style="margin-left:50px;"> ⓒ YS Corp.</b>
+         </div>
+       </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src=" https://ys0222.github.io/ys0222/JS/js1.js"></script>
+<script>
+
+window.onload = function() {
+document.getElementById('send').onclick = function(){
+
+var kindchoice = document.getElementsByName('kind');
+var kind ; 
+for(var i=0; i<kindchoice.length; i++) {
+    if(kindchoice[i].checked == true) {
+        kind = kindchoice[i].value;
+    }
+}
+
+var morechoice = document.getElementsByName('more');
+var more ; 
+for(var i=0; i<morechoice.length; i++) {
+    if(morechoice[i].checked == true) {
+        more = morechoice[i].value;
+    }
+}
+
+var bigchoice = document.getElementsByName('big');
+var big ; 
+for(var i=0; i<bigchoice.length; i++) {
+    if(bigchoice[i].checked == true) {
+        big = bigchoice[i].value;
+    }
+}
+
+var cheesechoice = document.getElementsByName('cheese');
+var cheese ; 
+for(var i=0; i<cheesechoice.length; i++) {
+    if(cheesechoice[i].checked == true) {
+        cheese = cheesechoice[i].value;
+    }
+}
+
+if(kind == 'a')
+{
+    var a = 'a';
+}
+else if (kind == 'b')
+{
+    var a = 'b';
+}
+else 
+{
+    var a ='c';
+}
+
+if(more == 'd')
+{
+    var b = 'd';
+}
+else 
+{
+    var b ='e';
+}
+
+if(big == 'f')
+{
+    var c = 'f';
+}
+else 
+{
+    var c ='g';
+}
+
+if(cheese == 'h')
+{
+    var d = 'h';
+}
+else 
+{
+    var d ='i';
+}
+
+
+switch (a+b+c+d) {
+    case 'adfh':
+    alert('[버거킹] 콰트로치즈와퍼');
+    break;
+    
+    case 'adfi':
+    alert('[버거킹] 기네스와퍼');
+    break;
+    
+    case 'adgh':
+    alert('[버거킹] 스태커와퍼');
+    break;
+    
+    case 'adgi':
+    alert('[버거킹] 몬스터X');
+    break;
+
+    case 'aefh':
+    alert('[버거킹] 치즈와퍼');
+    break;
+
+    case 'aefi':
+    alert('[버거킹] 와퍼');
+    break;
+
+    case 'aejh':
+    alert('[버거킹] 스태커와퍼');
+    break;
+
+    case 'aeji':
+    alert('[버거킹] 몬스터X');
+    break;
+
+    case 'bdfh':
+    alert('[KFC] 징거더블다운맥스');
+    break;
+
+    case 'bdfi':
+    alert('[KFC] 징거버거');
+    break;
+
+    case 'bdgh':
+    alert('[맘스터치] 화이트갈릭버거');
+    break;
+
+    case 'bdgi':
+    alert('[맘스터치] 언빌리버블버거');
+    break;
+
+    case 'befh':
+    alert('[KFC] 켄터키치킨업그레이비버거');
+    break;
+
+    case 'befi':
+    alert('[롯데리아] 티렉스버거');
+    break;
+
+    case 'begh':
+    alert('[KFC] 징거더블다운맥스');
+    break;
+
+    case 'begi':
+    alert('[맘스터치] 싸이버거');
+    break;
+
+    case 'cdfh':
+    alert('[버거킹] 통새우와퍼주니어');
+    break;
+
+    case 'cdfi':
+    alert('[버거킹] 통새우와퍼주니어');
+    break;
+    
+    case 'cdgh':
+    alert('[버거킹] 통새우X');
+    break;
+
+    case 'cdgi':
+    alert('[버거킹] 통새우X');
+    break;
+
+    case 'cefh':
+    alert('[버거킹] 통새우와퍼주니어');
+    break;
+
+    case 'cefi':
+    alert('[버거킹] 통새우와퍼주니어');
+    break;
+
+    case 'cegh':
+    alert('[버거킹] 통새우X');
+    break;
+
+    case 'cegi':
+    alert('[버거킹] 통새우와퍼');
+    break;
+
+
+    
+
+}}
+}
 
 </script>
 </body>
-
 </html>
-
-
-  
