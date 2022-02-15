@@ -1,0 +1,352 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#top
+{
+    text-align : center;
+    width: 50px;
+}
+#sun
+{
+    text-align : center;
+    color:red;
+}
+#sat
+{
+    text-align : center;
+    color:blue;
+}
+#nor
+{
+    text-align : center;
+}
+table {
+  border: 1px solid skyblue;
+  border-collapse: collapse;
+  width : 768px;
+}
+th, td{
+    border: 1px solid skyblue;
+    border-collapse: collapse;
+    width: 70px;
+    height:20px
+}
+button {
+padding: 0;
+border: none;
+background: none;
+}
+#submit
+{
+text-align : center;
+}
+
+
+</style>
+</head>
+
+<body>
+<table>
+<tr><td colspan="7" id="top">2022년 2월</td></tr>
+<tr>
+    <td id="sun">Sun</td>
+    <td id="nor">Mon</td>
+    <td id="nor">Tue</td>
+    <td id="nor">Web</td>
+    <td id="nor">Thu</td>
+    <td id="nor">Fri</td>
+    <td id="sat">Sat</td>
+</tr>
+
+<tr>
+    <td id="sun"></td>
+    <td id="nor"></td>
+    <td id="nor">1<br>
+    <input type="checkbox" name="week1" value="131250" id="checkbox1">
+    </td> 
+    <td id="nor">2 <br>
+    <input type="checkbox" name="week1" value="131250" id="checkbox1">
+    </td>
+    <td id="nor">3 <br>
+    <input type="checkbox" name="week1" value="87500" id="checkbox1">
+    </td>
+    <td id="nor">4 <br>
+    <input type="checkbox" name="week1" value="87500" id="checkbox1">
+    </td>
+    <td id="sat">5 <br>
+    <input type="checkbox" name="week1" value="87500" id="checkbox1">
+    </td>
+    </tr>
+
+<tr>
+    <td id="sun">6 <br>
+    <input type="checkbox" name="week2" value="87500" id="checkbox1">
+    </td>
+    <td id="nor">7 <br>
+    <input type="checkbox" name="week2" value="87500" id="checkbox1">
+    </td></td>
+    <td id="nor">8 <br>
+    <input type="checkbox" name="week2" value="87500" id="checkbox1">
+    </td></td>
+    <td id="nor">9 <br>
+    <input type="checkbox" name="week2" value="87500" id="checkbox1">
+    </td></td>
+    <td id="nor">10 <br>
+    <input type="checkbox" name="week2" value="87500" id="checkbox1">
+    </td></td>
+    <td id="nor">★입사일★<br>
+    <input type="checkbox" name="week2" value="87500" id="checkbox1">
+    </td></td>
+    <td id="sat">12<br>
+    <input type="checkbox" name="week2" value="87500" id="checkbox1">
+    </td>
+</tr>
+
+<tr>
+    <td id="sun">13 <br>
+        <input type="checkbox" name="week3" value="87500" id="checkbox1">
+        </td>
+        <td id="nor">14 <br>
+        <input type="checkbox" name="week3" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">15 <br>
+        <input type="checkbox" name="week3" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">16 <br>
+        <input type="checkbox" name="week3" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">17 <br>
+        <input type="checkbox" name="week3" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">18 <br>
+        <input type="checkbox" name="week3" value="87500" id="checkbox1">
+        </td></td>
+        <td id="sat">19<br>
+        <input type="checkbox" name="week3" value="87500" id="checkbox1">
+        </td>
+</tr>
+
+<tr>
+    <td id="sun">20 <br>
+        <input type="checkbox" name="week4" value="87500" id="checkbox1">
+        </td>
+        <td id="nor">21 <br>
+        <input type="checkbox" name="week4" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">22 <br>
+        <input type="checkbox" name="week4" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">23<br>
+        <input type="checkbox" name="week4" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">24 <br>
+        <input type="checkbox" name="week4" value="87500" id="checkbox1">
+        </td></td>
+        <td id="nor">25 <br>
+        <input type="checkbox" name="week4" value="87500" id="checkbox1">
+        </td></td>
+        <td id="sat">26<br>
+        <input type="checkbox" name="week4" value="87500" id="checkbox1">
+        </td>
+</tr>
+
+<tr>
+    <td id="sun">27 <br>
+        <input type="checkbox" name="week5" value="87500" id="checkbox1">
+        </td>
+        <td id="nor">28 <br>
+        <input type="checkbox" name="week5" value="87500" id="checkbox1">
+        <td id="nor"></td>
+        <td id="nor"></td>
+        <td id="nor"></td>
+        <td id="nor"></td>
+</tr>
+<tr>
+<td id="submit" colspan="7">
+<button id="send">
+<span class="submit" id="send">계산하기</span>
+</button>
+</td>
+</tr>
+</table>
+
+<div>
+<div>총 근무 일수 : <span id="day"></span></div>
+<div>주휴 수당 : <span id="weekly"></span></div>
+<div>월 급여 (세전) : <span id="month"></span></div>
+<br>
+※각종 인센티브는 따로 계산하셔야 합니다.<br>
+※데일리 인센티브의 오차가 있을 수 있습니다. 제보 부탁드립니다.<br>
+※계산하기 버튼을 한번 누르고 다시 계산하려면 새로고침(F5) 하신 후 다시 부탁드립니다. <br>
+※통상 시급은 10,000원으로 계산했습니다. 정확한 시급 파악 후 수정하겠습니다. <br>
+</div>
+<script>
+let count =0 , count1 =0, count2 =0, count3 =0, count4 =0, count5 =0
+//근무일수
+let salary =0, salary1 =0, salary2 =0,salary3 =0, salary4 =0, salary5 =0
+//월급
+let ws=0, ws1=0, ws2=0, ws3=0, ws4=0, ws5=0
+//주휴수당
+
+window.onload = function() {
+document.getElementById('send').onclick = function(){
+
+var week1_length = document.getElementsByName("week1").length;
+var week2_length = document.getElementsByName("week2").length;
+var week3_length = document.getElementsByName("week3").length;
+var week4_length = document.getElementsByName("week4").length;
+var week5_length = document.getElementsByName("week5").length;
+
+
+for (var i=0; i<week1_length; i++) {
+    
+    if (document.getElementsByName("week1")[i].checked == true) {
+    count1 ++;
+    switch(count1) {
+        case 0: ws1=0;
+        salary1= parseInt(salary1) + parseInt(document.getElementsByName("week1")[i].value) + ws1;
+        break;
+        case 1: ws1=0;
+        salary1= parseInt(salary1) + parseInt(document.getElementsByName("week1")[i].value) + ws1;
+        break;
+        case 2: ws1=30688;
+        salary1= parseInt(salary1) + parseInt(document.getElementsByName("week1")[i].value) + ws1;
+        break;
+        case 3: ws1=46032;
+        salary1= parseInt(salary1) + parseInt(document.getElementsByName("week1")[i].value) + ws1;
+        break;
+        case 4: ws1= 61376;
+        salary1= parseInt(salary1) + parseInt(document.getElementsByName("week1")[i].value) + ws1;
+        break;
+        case 5: ws1= 76720;
+        salary1= parseInt(salary1) + parseInt(document.getElementsByName("week1")[i].value) + ws1;
+        break;
+    }
+    }
+        
+}
+for (var i=0; i<week2_length; i++) {
+    
+    if (document.getElementsByName("week2")[i].checked == true) {
+    count2 ++;
+    switch(count2) {
+        case 0: ws2=0;
+        salary2= parseInt(salary2) + parseInt(document.getElementsByName("week2")[i].value) + ws2;
+        break;
+        case 1: ws2=0;
+        salary2= parseInt(salary2) + parseInt(document.getElementsByName("week2")[i].value) + ws2;
+        break;
+        case 2: ws2=30688;
+        salary2= parseInt(salary2) + parseInt(document.getElementsByName("week2")[i].value) + ws2;
+        break;
+        case 3: ws2=46032;
+        salary2= parseInt(salary2) + parseInt(document.getElementsByName("week2")[i].value) + ws2;
+        break;
+        case 4: ws2= 61376;
+        salary2= parseInt(salary2) + parseInt(document.getElementsByName("week2")[i].value) + ws2;
+        break;
+        case 5: ws2= 76720;
+        salary2= parseInt(salary2) + parseInt(document.getElementsByName("week2")[i].value) + ws2;
+        break;
+    }
+    }
+}
+
+    for (var i=0; i<week3_length; i++) {
+    
+    if (document.getElementsByName("week3")[i].checked == true) {
+    count3 ++;
+    switch(count3) {
+        case 0: ws3=0;
+        salary3= parseInt(salary3) + parseInt(document.getElementsByName("week3")[i].value) + ws3;
+        break;
+        case 1: ws3=0;
+        salary3= parseInt(salary3) + parseInt(document.getElementsByName("week3")[i].value) + ws3;
+        break;
+        case 2: ws3=30688;
+        salary3= parseInt(salary3) + parseInt(document.getElementsByName("week3")[i].value) + ws3;
+        break;
+        case 3: ws3=43920;
+        salary3= parseInt(salary3) + parseInt(document.getElementsByName("week3")[i].value) + ws3;
+        break;
+        case 4: ws3= 61376;
+        salary3= parseInt(salary3) + parseInt(document.getElementsByName("week3")[i].value) + ws3;
+        break;
+        case 5: ws3= 76720;
+        salary3= parseInt(salary3) + parseInt(document.getElementsByName("week3")[i].value) + ws3;
+        break;
+    }
+    }
+}
+
+    for (var i=0; i<week4_length; i++) {
+    
+    if (document.getElementsByName("week4")[i].checked == true) {
+    count4 ++;
+    switch(count4) {
+        case 0: ws4=0;
+        salary4= parseInt(salary4) + parseInt(document.getElementsByName("week4")[i].value) + ws4;
+        break;
+        case 1: ws4=0;
+        salary4= parseInt(salary4) + parseInt(document.getElementsByName("week4")[i].value) + ws4;
+        break;
+        case 2: ws4=30688;
+        salary4= parseInt(salary4) + parseInt(document.getElementsByName("week4")[i].value) + ws4;
+        break;
+        case 3: ws4=46032;
+        salary4= parseInt(salary4) + parseInt(document.getElementsByName("week4")[i].value) + ws4;
+        break;
+        case 4: ws4= 61376;
+        salary4= parseInt(salary4) + parseInt(document.getElementsByName("week4")[i].value) + ws4;
+        break;
+        case 5: ws4= 76720;
+        salary4= parseInt(salary4) + parseInt(document.getElementsByName("week4")[i].value) + ws4;
+        break;
+    }
+    }
+    }
+    for (var i=0; i<week5_length; i++) {
+    
+    if (document.getElementsByName("week5")[i].checked == true) {
+    count5 ++;
+    switch(count5) {
+        case 0: ws5=0;
+        salary5= parseInt(salary5) + parseInt(document.getElementsByName("week5")[i].value) + ws5;
+        break;
+        case 1: ws5=0;
+        salary5= parseInt(salary5) + parseInt(document.getElementsByName("week5")[i].value) + ws5;
+        break;
+        case 2: ws5=30688;
+        salary5= parseInt(salary5) + parseInt(document.getElementsByName("week5")[i].value) + ws5;
+        break;
+        case 3: ws5=46032;
+        salary5= parseInt(salary5) + parseInt(document.getElementsByName("week5")[i].value) + ws5;
+        break;
+        case 4: ws5= 61376;
+        salary5= parseInt(salary5) + parseInt(document.getElementsByName("week5")[i].value) + ws5;
+        break;
+        case 5: ws5= 76720;
+        salary5= parseInt(salary5) + parseInt(document.getElementsByName("week5")[i].value) + ws5;
+        break;
+    }
+    }
+}
+count = count1 +count2 + count3 + count4 + count5;
+ws = ws1+ws2+ws3+ws4+ws5;
+salary = salary1+salary2+salary3+salary4+salary5;
+var salary_txt = Number(salary).toLocaleString();
+var ws_txt = Number(ws).toLocaleString();
+
+document.getElementById('day').innerHTML=count;
+document.getElementById('weekly').innerHTML=ws_txt;
+document.getElementById('month').innerHTML=salary_txt;
+
+}
+}
+    
+</script>
+</body>
+</html>
