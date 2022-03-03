@@ -1,0 +1,301 @@
+<html>
+
+<head>
+
+<style>
+body{
+    margin-top: 50px;
+}
+
+.wrapping{
+    width: 2000px;
+    height : 2000px;
+    padding : 20px;
+    margin: 30px;
+    margin:0px auto;
+    min-width:1px;
+    max-width:500px;
+}
+.wrapping1{
+    width : 800px;
+    margin: 30px;
+    margin:0px auto;
+    min-width:1px;
+    max-width:500px;
+}
+.top
+{
+    width: 2000px;
+    height: 200px;
+    text-align: center;
+}
+.head{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: azure;
+    position: relative;
+    top:0%;
+    left:300px;
+}
+.center{
+    width: 1800px;
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+}
+.glove{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: azure;
+    flex-basis:200px;
+}
+.wear{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: azure;
+    flex-basis:200px;
+    margin-left: 100px;
+}
+.weapon{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: azure;
+    flex-basis:200px;
+    margin-left: 100px;
+}
+.bottom{
+    width: 1800px;
+    height: 200px;
+    margin-top: 100px;
+}
+.shoes{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: azure;
+    position: relative;
+    top:0%;
+    left:300px;
+}
+.img
+{
+    text-align: left;
+    border : 1 solid black;
+}
+.stat
+{
+    text-align: right;
+    border : 1 solid black;
+}
+.attack
+{
+    text-align: right;
+    border : 1 solid black;
+}
+.chance
+{
+    text-align: right;
+    border : 1 solid black;
+}
+.plusStat
+{
+    text-align: right;
+    border : 1 solid black;
+}
+</style>
+</head>
+<body>
+<div class="wrapping1">
+    <h1>
+        나의 스공은?
+    </h1>
+    <h2 class="userStat">
+
+    </h2>
+    </div>
+
+<div class="wrapping">
+<div class="top">
+<div class="head">뚝배기
+    
+    <div class="img">
+        <img src="" alt="x">
+        </div>
+        
+        <div class="stat" id="helmetStat">
+        STR + 1
+        </div>
+        
+        <div class="attack" id="helmetAttack">
+            공격력 + 0
+            </div>
+
+        <div class="plusStat" id="helmetPlus">
+        스공 + 0
+        </div>
+        
+        <div class="chance" id="helmetChance">
+        남은 횟수 : 7
+        </div>
+        
+        <br><br>
+        
+        <div class="btn">
+            <button class="btn15" id="helmet70">
+            70%
+            </button>
+            <button class="btn30" id="helmet30">
+            30%
+            </button>
+            </div>
+    </div>
+</div>
+
+<div class="center">
+<div class="glove">장갑
+    
+    <div class="img">
+        <img src="" alt="x">
+        </div>
+       
+        <div class="stat" id="gloveStat">
+        STR + 1
+        </div>
+        
+        <div class="attack" id="gloveAttack">
+            공격력 + 0
+            </div>
+                
+        <div class="plusStat" id="glovePlus">
+        스공 + 0
+        </div>
+        
+        <div class="chance" id="gloveChance">
+            남은 횟수 : 7
+            </div>
+        <br><br>
+        
+        <div class="btn">
+            <button class="btn15" id="glove70">
+            70%
+            </button>
+            <button class="btn30" id="glove30">
+            30%
+            </button>
+        </div>
+</div>
+
+<div class="wear">옷
+    
+    <div class="img">
+        <img src="" alt="x">
+        </div>
+        
+        <div class="stat" id="wearStat">
+        STR + 1
+        </div>
+        
+        <div class="attack" id="wearAttack">
+            공격력 + 0
+            </div>
+
+        <div class="plusStat" id="wearPlus">
+            스공 + 0
+            </div>
+        
+        <div class="chance" id="wearChance">
+            남은 횟수 : 7
+            </div>
+        <br><br>
+        
+        <div class="btn">
+            <button class="btn15" id="wear70">
+            70%
+            </button>
+            <button class="btn30" id="wear30">
+            30%
+            </button>
+            </div>
+</div>
+
+<div class="weapon">무기
+    
+    <div class="img">
+        <img src="" alt="x">
+        </div>
+        
+        <div class="stat" id="weaponStat">
+        STR + 1
+        </div>
+        
+        <div class="attack" id="weaponAttack">
+        공격력 + 0
+        </div>
+        
+        <div class="plusStat" id="weaponPlus">
+            스공 + 100
+        </div>
+        
+        <div class="plusStat" id="weaponChance">
+            남은 횟수 : 7
+            </div>
+
+        <br><br>
+        
+        <div class="btn">
+            <button class="btn15" id="weapon70">
+            70%
+            </button>
+            <button class="btn30" id="weapon30">
+            30%
+            </button>
+            </div>
+        </div>
+</div>
+
+<div class="bottom">
+<div class="shoes">신발
+    
+    <div class="img">
+        <img src="" alt="x">
+        </div>
+        
+        <div class="stat" id="shoesStat">
+        STR + 1
+        </div>
+
+        <div class="attack" id="shoesAttack">
+            공격력 + 0
+            </div>
+            
+        <div class="plusStat" id="shoesPlus">
+            스공 + 0
+        </div>
+        
+        <div class="chance" id="shoesChance">
+            남은 횟수 : 7
+            </div>
+
+        <br><br>
+        
+        <div class="btn">
+            <button class="btn15" id="shoes70">
+            70%
+            </button>
+            <button class="btn30" id="shoes30">
+            30%
+            </button>
+            </div>
+    </div>
+</div>
+<button onclick="submit()">
+스공보기
+</button>
+
+<script src="enchant.js"></script>
+</body>
+</html>
