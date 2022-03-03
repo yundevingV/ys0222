@@ -61,11 +61,11 @@ enchantbtn_helmet70.addEventListener('click', function(){
         user.statAttack = user.statAttack + 4
         helmetStat.innerHTML = `STR + ${equipment[0].str}`
         helmetAttack.innerHTML = `공격력 + ${equipment[0].attack}`
-        helmetChance.innerHTML = `남은 횟수 + ${equipment[0].chance}`
+        helmetChance.innerHTML = `남은 횟수 : ${equipment[0].chance}`
         helmetPlus.innerHTML = `스공 + ${equipment[0].plusStat}`
         if(equipment[0].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            helmetChance.innerHTML = `남은 횟수 + ${0}`
+            helmetChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -74,7 +74,7 @@ enchantbtn_helmet70.addEventListener('click', function(){
         console.log(randomInt)
         if(equipment[0].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            helmetChance.innerHTML = `남은 횟수 + ${0}`
+            helmetChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -88,11 +88,11 @@ enchantbtn_helmet30.addEventListener('click', function(){
         equipment[0].plusStat = equipment[0].plusStat + 10
         helmetStat.innerHTML = `STR + ${equipment[0].str}`
         helmetAttack.innerHTML = `공격력 + ${equipment[0].attack}`
-        helmetChance.innerHTML = `남은 횟수 + ${equipment[0].chance}`
+        helmetChance.innerHTML = `남은 횟수 : ${equipment[0].chance}`
         helmetPlus.innerHTML = `스공 + ${equipment[0].plusStat}`
         if(equipment[0].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            helmetChance.innerHTML = `남은 횟수 + ${0}`
+            helmetChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -101,7 +101,7 @@ enchantbtn_helmet30.addEventListener('click', function(){
         console.log(randomInt)
         if(equipment[0].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            helmetChance.innerHTML = `남은 횟수 + ${0}`
+            helmetChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -116,11 +116,11 @@ enchantbtn_glove70.addEventListener('click', function(){
         equipment[1].plusStat = equipment[1].plusStat + 4
         gloveStat.innerHTML = `STR + ${equipment[1].str}`
         gloveAttack.innerHTML = `공격력 + ${equipment[1].attack}`
-        gloveChance.innerHTML = `남은 횟수 + ${equipment[1].chance}`
+        gloveChance.innerHTML = `남은 횟수 : ${equipment[1].chance}`
         glovePlus.innerHTML = `스공 + ${equipment[1].plusStat}`
         if(equipment[1].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            gloveChance.innerHTML = `남은 횟수 + ${0}`
+            gloveChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -128,7 +128,7 @@ enchantbtn_glove70.addEventListener('click', function(){
         gloveChance.innerHTML = `남은 횟수 : ${equipment[1].chance}`
         if(equipment[1].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            gloveChance.innerHTML = `남은 횟수 + ${0}`
+            gloveChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -142,11 +142,11 @@ enchantbtn_glove30.addEventListener('click', function(){
         equipment[1].plusStat = equipment[1].plusStat + 10
         gloveStat.innerHTML = `STR + ${equipment[1].str}`
         gloveAttack.innerHTML = `공격력 + ${equipment[1].attack}`
-        gloveChance.innerHTML = `남은 횟수 + ${equipment[1].chance}`
+        gloveChance.innerHTML = `남은 횟수 : ${equipment[1].chance}`
         glovePlus.innerHTML = `스공 + ${equipment[1].plusStat}`
         if(equipment[1].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            gloveChance.innerHTML = `남은 횟수 + ${0}`
+            gloveChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -154,7 +154,7 @@ enchantbtn_glove30.addEventListener('click', function(){
         gloveChance.innerHTML = `남은 횟수 : ${equipment[1].chance}`
         if(equipment[1].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            gloveChance.innerHTML = `남은 횟수 + ${0}`
+            gloveChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -170,11 +170,11 @@ enchantbtn_wear70.addEventListener('click', function(){
         equipment[2].plusStat = equipment[2].plusStat + 4
         wearStat.innerHTML = `STR + ${equipment[2].str}`
         wearAttack.innerHTML = `공격력 + ${equipment[2].attack}`
-        wearChance.innerHTML = `남은 횟수 + ${equipment[2].chance}`
+        wearChance.innerHTML = `남은 횟수 : ${equipment[2].chance}`
         wearPlus.innerHTML = `스공 + ${equipment[2].plusStat}`
         if(equipment[2].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            wearChance.innerHTML = `남은 횟수 + ${0}`
+            wearChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -182,7 +182,7 @@ enchantbtn_wear70.addEventListener('click', function(){
         wearChance.innerHTML = `남은 횟수 : ${equipment[2].chance}`
         if(equipment[2].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            wearChance.innerHTML = `남은 횟수 + ${0}`
+            wearChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -196,11 +196,11 @@ enchantbtn_wear30.addEventListener('click', function(){
         equipment[2].plusStat = equipment[2].plusStat + 10
         wearStat.innerHTML = `STR + ${equipment[2].str}`
         wearAttack.innerHTML = `공격력 + ${equipment[2].attack}`
-        wearChance.innerHTML = `남은 횟수 + ${equipment[2].chance}`
+        wearChance.innerHTML = `남은 횟수 : ${equipment[2].chance}`
         wearPlus.innerHTML = `스공 + ${equipment[2].plusStat}`
         if(equipment[2].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            wearChance.innerHTML = `남은 횟수 + ${0}`
+            wearChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -209,7 +209,7 @@ enchantbtn_wear30.addEventListener('click', function(){
         console.log(randomInt)
         if(equipment[2].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            wearChance.innerHTML = `남은 횟수 + ${0}`
+            wearChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -223,11 +223,11 @@ enchantbtn_weapon70.addEventListener('click', function(){
         equipment[3].plusStat = equipment[3].plusStat + 8
         weaponStat.innerHTML = `STR + ${equipment[3].str}`
         weaponAttack.innerHTML = `공격력 + ${equipment[3].attack}`
-        weaponChance.innerHTML = `남은 횟수 + ${equipment[3].chance}`
+        weaponChance.innerHTML = `남은 횟수 : ${equipment[3].chance}`
         weaponPlus.innerHTML = `스공 + ${equipment[3].plusStat}`
         if(equipment[3].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            weaponChance.innerHTML = `남은 횟수 + ${0}`
+            weaponChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -236,7 +236,7 @@ enchantbtn_weapon70.addEventListener('click', function(){
         console.log(randomInt)
         if(equipment[3].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            weaponChance.innerHTML = `남은 횟수 + ${0}`
+            weaponChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -250,11 +250,11 @@ enchantbtn_weapon30.addEventListener('click', function(){
         equipment[3].plusStat = equipment[3].plusStat + 19
         weaponStat.innerHTML = `STR + ${equipment[3].str}`
         weaponAttack.innerHTML = `공격력 + ${equipment[3].attack}`
-        weaponChance.innerHTML = `남은 횟수 + ${equipment[3].chance}`
+        weaponChance.innerHTML = `남은 횟수 : ${equipment[3].chance}`
         weaponPlus.innerHTML = `스공 + ${equipment[3].plusStat}`
         if(equipment[3].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            weaponChance.innerHTML = `남은 횟수 + ${0}`
+            weaponChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -263,7 +263,7 @@ enchantbtn_weapon30.addEventListener('click', function(){
         console.log(randomInt)
         if(equipment[3].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            weaponChance.innerHTML = `남은 횟수 + ${0}`
+            weaponChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -277,11 +277,11 @@ enchantbtn_shoes70.addEventListener('click', function(){
         equipment[4].plusStat = equipment[4].plusStat + 4
         shoesStat.innerHTML = `STR + ${equipment[4].str}`
         shoesAttack.innerHTML = `공격력 + ${equipment[4].attack}`
-        shoesChance.innerHTML = `남은 횟수 + ${equipment[4].chance}`
+        shoesChance.innerHTML = `남은 횟수 : ${equipment[4].chance}`
         shoesPlus.innerHTML = `스공 + ${equipment[4].plusStat}`
         if(equipment[4].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            shoesChance.innerHTML = `남은 횟수 + ${0}`
+            shoesChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -290,7 +290,7 @@ enchantbtn_shoes70.addEventListener('click', function(){
         console.log(randomInt)
         if(equipment[4].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            shoesChance.innerHTML = `남은 횟수 + ${0}`
+            shoesChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
@@ -302,14 +302,13 @@ enchantbtn_shoes30.addEventListener('click', function(){
         equipment[4].attack = equipment[4].attack + 2
         equipment[4].chance = equipment[4].chance - 1
         equipment[4].plusStat = equipment[4].plusStat + 10
-        user.statAttack += 10
         shoesStat.innerHTML = `STR + ${equipment[4].str}`
         shoesAttack.innerHTML = `공격력 + ${equipment[4].attack}`
-        shoesChance.innerHTML = `남은 횟수 + ${equipment[4].chance}`
+        shoesChance.innerHTML = `남은 횟수 : ${equipment[4].chance}`
         shoesPlus.innerHTML = `스공 + ${equipment[4].plusStat}`
         if(equipment[4].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            shoesChance.innerHTML = `남은 횟수 + ${0}`
+            shoesChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
     else{
@@ -318,7 +317,7 @@ enchantbtn_shoes30.addEventListener('click', function(){
         console.log(randomInt)
         if(equipment[4].chance < 0){
             alert('더 이상 강화할 수 없습니다.')
-            shoesChance.innerHTML = `남은 횟수 + ${0}`
+            shoesChance.innerHTML = `남은 횟수 : ${0}`
         }
     }
 })
