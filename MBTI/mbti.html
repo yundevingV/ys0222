@@ -1,0 +1,472 @@
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Simple MBTI Test</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+input[type='radio'] {
+			-webkit-appearance:none;
+			
+			border:1px solid green;
+			border-radius:50%;
+			outline:none;
+			background:#ffffff;
+		}
+		input[type='radio']:before {
+			content:'';
+			display:block;
+			width:100%;
+			height:100%;
+			border-radius:50%;  
+		}
+		input[type='radio']:checked:before {
+			background-image :url("https://user-images.githubusercontent.com/91381230/142149098-0f10a396-3807-421b-afa9-a17cdac01b78.png");
+            background-size : contain;          
+            background-repeat : no-repeat;
+		}
+        body{
+        font-family: 'Jua', sans-serif;
+        max-width: 800px;
+        min-width: 1px;
+        }
+
+        #startbutton{
+         border-radius:100px;
+         width:1000px;
+         height:50px;
+         background :#81e2bd;
+        }
+        #submitbutton{
+         border-radius:100px;
+         width:200px;
+         height:50px;
+         background :#81e2bd;
+        }
+        #radio1{
+            width : 60px; 
+            height:60px;
+        }
+        #radio2{
+            width : 55px; 
+            height: 55px;
+        }
+        #radio3{
+            width : 48px; 
+            height: 48px;
+        }
+        #radio4{
+            width : 33px; 
+            height:33px;
+        }
+        #agree{
+            font-size : 22px;
+            color: green;
+        }
+        #disagree{
+            font-size : 22px;
+            color: rgb(170, 84, 170);
+        }
+        .submit{
+            text-align : center;
+            font-size:30px;
+        }
+
+       #info
+       {
+           width : 100%;
+           height : 30%;
+           background-color : rgb(189, 219, 143);
+           margin: 20px;
+       }
+       #info1
+       {
+        width : 150px;
+        height : 150px;
+        background-color : rgb(121, 121, 226);
+        position :absolute;
+        top:70px;
+        left:50px;
+        border-radius : 10px;
+        font-size:22px;
+        text-align:center;
+       }
+
+       #info2
+       {
+        width : 150px;
+        height : 150px;
+        background-color : rgb(121, 121, 226);
+        position :absolute;
+        top:70px;
+        left:325px;
+        border-radius : 10px;
+        font-size:22px;
+        text-align:center;
+       }
+
+       #info3
+       {
+        width : 150px;
+        height : 150px;
+        background-color : rgb(121, 121, 226);
+        position :absolute;
+        left : 600px;
+        border-radius : 10px;
+        font-size:22px;
+        text-align:center;
+       }
+       #infospan{
+        text-align : center;
+        margin-bottom: 10px;
+
+       }
+       footer {
+            background-color:rgb(46, 39, 39);
+            
+            margin-top : 0px; height:100px;
+            font-size : 15px
+        }
+        #hrcss{
+            background-color: aqua;
+            border: 0px;
+
+        }
+       </style>
+        
+</head>
+<body>
+   
+<div id="info">
+<div id="infospan"><h2> <b>무료 성격 유형검사</b></h2></div>
+<div id="info1">
+
+총 검사 시간은 1분입니다!
+</div>
+    
+<div id="info2">
+
+질문이 마음에 들지 않더라도 정직하게 답변하세요!
+</div>
+
+<div id="info3">
+
+가능하면 답변 시 '중립'을 선택하지 마십시오.
+</div>
+</div>
+  
+<div class="container" style="text-align : center;">
+<h2>다른 사람들에게 자신을 소개하는것을 어려워 합니다.</h2>
+    
+<span id="agree"> 동의  </span>
+  <input type="radio" name="ei1" value="1" id="radio1">
+  <input type="radio" name="ei1" value="2" id="radio2">
+  <input type="radio" name="ei1" value="3" id="radio3">
+  <input type="radio" name="ei1" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="ei1" value="5" id="radio3" style="border:1px solid purple;">
+  <input type="radio" name="ei1" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="ei1" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+  <hr>
+  <div class="container" style="text-align : center;">
+
+  <h2>먼저 말을 걸지 않는다.</h2>
+  <span id="agree"> 동의  </span>
+  <input type="radio" name="ei2" value="1" id="radio1">
+  <input type="radio" name="ei2" value="2" id="radio2">
+  <input type="radio" name="ei2" value="3" id="radio3">
+  <input type="radio" name="ei2" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="ei2" value="5" id="radio3" style="border:1px solid purple;">
+  <input type="radio" name="ei2" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="ei2" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+<hr>
+
+  <div class="container" style="text-align : center;">
+
+  <h2>미래가 현재보다 더 중요하다.</h2>
+  <span id="agree"> 동의  </span>
+  <input type="radio" name="ns1" value="1" id="radio1">
+  <input type="radio" name="ns1" value="2" id="radio2">
+  <input type="radio" name="ns1" value="3" id="radio3">
+  <input type="radio" name="ns1" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="ns1" value="5" id="radio3" style="border:1px solid purple;">
+  <input type="radio" name="ns1" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="ns1" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+<hr>
+
+  <div class="container" style="text-align : center;">
+
+    <h2>직접 경험한 것보다 직관을 더 신뢰한다.</h2>
+  <span id="agree"> 동의  </span>
+  <input type="radio" name="ns2" value="1" id="radio1">
+  <input type="radio" name="ns2" value="2" id="radio2">
+  <input type="radio" name="ns2" value="3" id="radio3">
+  <input type="radio" name="ns2" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="ns2" value="5" id="radio3" style="border:1px solid purple;">
+  <input type="radio" name="ns2" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="ns2" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+<hr>
+
+  <div class="container" style="text-align : center;">
+
+  <h2>선의의 거짓말은 상황에 따라 가능하다.</h2>
+  <span id="agree"> 동의  </span>
+  <input type="radio" name="ft1" value="1" id="radio1">
+  <input type="radio" name="ft1" value="2" id="radio2">
+  <input type="radio" name="ft1" value="3" id="radio3">
+  <input type="radio" name="ft1" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="ft1" value="5" id="radio3" style="border:1px solid purple;">
+  <input type="radio" name="ft1" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="ft1" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+<hr>
+
+  <div class="container" style="text-align : center;">
+
+  <h2>어떤 상황에 따라 객관적이지 않고 주변 상황을 고려해 의사결정을 한다.</h2>
+  <span id="agree"> 동의  </span>
+  <input type="radio" name="ft2" value="1" id="radio1">
+  <input type="radio" name="ft2" value="2" id="radio2">
+  <input type="radio" name="ft2" value="3" id="radio3">
+  <input type="radio" name="ft2" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="ft2" value="5" id="radio3" style="border:1px solid purple;"> 
+  <input type="radio" name="ft2" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="ft2" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+<hr>
+
+  <div class="container" style="text-align : center;">
+
+  <h2>여행을 갈때 계획적인 여행을 가는것을 원한다.</h2>
+  <span id="agree"> 동의  </span>
+  <input type="radio" name="jp1" value="1" id="radio1">
+  <input type="radio" name="jp1" value="2" id="radio2">
+  <input type="radio" name="jp1" value="3" id="radio3">
+  <input type="radio" name="jp1" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="jp1" value="5" id="radio3" style="border:1px solid purple;">
+  <input type="radio" name="jp1" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="jp1" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+<hr>
+
+  <div class="container" style="text-align : center;">
+
+  <h2>자신의 계획이 갑자기 흐트러지면 불안감을 느낀다.</h2>
+  <span id="agree"> 동의  </span>
+  <input type="radio" name="jp2" value="1" id="radio1">
+  <input type="radio" name="jp2" value="2" id="radio2">
+  <input type="radio" name="jp2" value="3" id="radio3">
+  <input type="radio" name="jp2" value="4" id="radio4" style="border:1px solid gray;">
+  <input type="radio" name="jp2" value="5" id="radio3" style="border:1px solid purple;">
+  <input type="radio" name="jp2" value="6" id="radio2" style="border:1px solid purple;">
+  <input type="radio" name="jp2" value="7" id="radio1" style="border:1px solid purple;">
+  <span id="disagree"> 비동의  </span>
+</div>
+
+  <div class="container" style="text-align : center; margin-bottom:10px;"><button id="send" ><span class="submit" id="send">전송하기</span></button> </div>
+</div>
+<footer>
+    <br>
+    <div style="text-align : center; color: white; ">
+      TEL : 010-9523-XX51 | E-MAIL : dbstjd0222@naver.com 
+      | <a style="text-decoration:none; color:white;" href="https://www.op.gg/summoner/userName=%EC%9D%B4%EC%9C%A4%EC%84%B1%EC%86%8C%ED%99%98%EC%82%AC%EB%8B%98">LOL : 이윤성소환사님</a> | FIFA4 : 윤스타님
+    </div>
+    <div style=" text-align : center; color: white; ">
+      <a style="text-decoration:none; color:white;" href="">채용문의</a> | 
+      <a style="text-decoration:none; color:white;" href="">사업소개</a> |
+      <a style="text-decoration:none; color:white;" href="https://ys0222.github.io/ys0222/HTML/chelsea.html">공식 후원사 |</a>
+      <a onclick="ys()" style="text-decoration:none; color:white;" href="">대표 이사 : 이윤성</a>
+      <b style="margin-left:50px;"> ⓒ YS Corp.</b>
+    </div>
+</footer>
+<script>
+
+window.onload = function() {
+document.getElementById('send').onclick = function(){
+
+var ei1choice = document.getElementsByName('ei1');
+var ei1 ; 
+for(var i=0; i<ei1choice.length; i++) {
+    if(ei1choice[i].checked == true) {
+        ei1 = ei1choice[i].value;
+    }
+}
+
+var ei2choice = document.getElementsByName('ei2');
+var ei2 ; 
+for(var i=0; i<ei2choice.length; i++) {
+    if(ei2choice[i].checked == true) {
+        ei2 = ei2choice[i].value;
+    }
+}
+
+var ns1choice = document.getElementsByName('ns1');
+var ns1 ; 
+for(var i=0; i<ns1choice.length; i++) {
+    if(ns1choice[i].checked == true) {
+        ns1 = ns1choice[i].value;
+    }
+}
+
+var ns2choice = document.getElementsByName('ns2');
+var ns2 ; 
+for(var i=0; i<ns2choice.length; i++) {
+    if(ns2choice[i].checked == true) {
+        ns2 = ns2choice[i].value;
+    }
+}
+
+var ft1choice = document.getElementsByName('ft1');
+var ft1 ; 
+for(var i=0; i<ft1choice.length; i++) {
+    if(ft1choice[i].checked == true) {
+        ft1 = ft1choice[i].value;
+    }
+}
+
+var ft2choice = document.getElementsByName('ft2');
+var ft2 ; 
+for(var i=0; i<ft2choice.length; i++) {
+    if(ft2choice[i].checked == true) {
+        ft2 = ft2choice[i].value;
+    }
+}
+
+var jp1choice = document.getElementsByName('jp1');
+var jp1 ; 
+for(var i=0; i<jp1choice.length; i++) {
+    if(jp1choice[i].checked == true) {
+        jp1 = jp1choice[i].value;
+    }
+}
+
+var jp2choice = document.getElementsByName('jp2');
+var jp2 ; 
+for(var i=0; i<jp2choice.length; i++) {
+    if(jp2choice[i].checked == true) {
+        jp2 = jp2choice[i].value;
+    }
+}
+
+
+
+if(parseInt(ei1)+parseInt(ei1)> 8)
+{
+    var a = 'E';
+}
+else 
+{
+    var a = 'I';
+}
+if(parseInt(ns1)+parseInt(ns2)> 8)
+{
+    var b = 'S';
+}
+else 
+{
+    var b = 'N';
+}
+if(parseInt(ft1)+parseInt(ft2)> 8)
+{
+    var c = 'T';
+}
+else 
+{
+    var c = 'F';
+}
+if(parseInt(jp1)+parseInt(jp2)> 8)
+{
+    var d = 'P';
+}
+else 
+{
+    var d = 'J';
+}
+
+  switch (a+b+c+d) {
+  case 'INFJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-infj');
+  break;
+
+  case 'INFP' : 
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-infp');
+  break;
+
+  case 'ISTP'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-istp');
+  break;
+
+  case 'ISTJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-istj');
+  break;
+
+  case 'INTP'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intp');
+  break;
+
+  case 'INTJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intj');
+  break;
+
+  case 'ISFP'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfp');
+  break;
+
+  case 'ISFJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfj');
+  break;
+
+  case 'ENFJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-enfj');
+  break;
+
+  case 'ENFP'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-enfp');
+  break;
+
+  case 'ENTJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-entj');
+  break;
+
+  case 'ENTP'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-entp');
+  break;
+
+  case 'ESTP'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-estp');
+  break;
+
+  case 'ESTJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-estj');
+  break;
+
+  case 'ESFJ'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-esfj');
+  break;
+
+  case 'ESFP'   :
+  window.open('https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-esfp');
+  break;
+ }
+}
+}
+
+
+
+</script>
+
+</body>
+</html>
