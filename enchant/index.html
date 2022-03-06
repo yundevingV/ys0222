@@ -1,20 +1,28 @@
 <html>
 
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
 body{
     margin-top: 50px;
+    font-family: 'Jua', sans-serif;
+
 }
 
 .wrapping{
-    width: 2000px;
     height : 2000px;
     padding : 20px;
-    margin: 30px;
     margin:0px auto;
     min-width:1px;
-    max-width:500px;
+    max-width:900px;
+    max-height: 900px;
+    background-image: url('https://user-images.githubusercontent.com/91381230/156927025-618f60b6-db5f-4d83-9aa9-0f2f6fd88948.png');
+    background-size: 225px 225px;
 }
 .wrapping1{
     width : 800px;
@@ -22,12 +30,15 @@ body{
     margin:0px auto;
     min-width:1px;
     max-width:500px;
+    text-align: left;
 }
 .top
 {
     width: 2000px;
     height: 200px;
     text-align: center;
+    position: relative;
+    
 }
 .head{
     width: 200px;
@@ -43,6 +54,7 @@ body{
     height: 200px;
     margin-top: 100px;
     display: flex;
+    position: relative;
 }
 .glove{
     width: 200px;
@@ -50,6 +62,7 @@ body{
     text-align: center;
     background-color: azure;
     flex-basis:200px;
+    position: relative;
 }
 .wear{
     width: 200px;
@@ -58,6 +71,7 @@ body{
     background-color: azure;
     flex-basis:200px;
     margin-left: 100px;
+    position: relative;
 }
 .weapon{
     width: 200px;
@@ -66,6 +80,7 @@ body{
     background-color: azure;
     flex-basis:200px;
     margin-left: 100px;
+    position: relative;
 }
 .bottom{
     width: 1800px;
@@ -80,6 +95,7 @@ body{
     position: relative;
     top:0%;
     left:300px;
+    position: relative;
 }
 .img
 {
@@ -99,19 +115,36 @@ body{
 .chance
 {
     text-align: right;
-    border : 1 solid black;
+    position: absolute;
+    bottom : 40px;
+    right:0px;
 }
 .plusStat
 {
     text-align: right;
     border : 1 solid black;
 }
+.btn15{
+    position: absolute;
+    bottom : 0px;
+    left : 30px;
+}
+.btn30{
+    position: absolute;
+    bottom : 0px;
+    right : 30px;
+}
+.img{
+    position: absolute;
+    top : 20px;
+    left:0px;
+}
 </style>
 </head>
 <body>
 <div class="wrapping1">
-    <h1>
-        나의 스공은?
+    <h1 >
+    강화의 신이 되어보세요!
     </h1>
     <h2 class="userStat">
 
@@ -119,11 +152,12 @@ body{
     </div>
 
 <div class="wrapping">
+
 <div class="top">
-<div class="head">뚝배기
-    
+<div class="head">
+    적응형 투구
     <div class="img">
-        <img src="" alt="x">
+        <img src="https://user-images.githubusercontent.com/91381230/156926768-c77acd1b-d49b-451f-96e5-019cac661cd3.gif" width="100px;" height="100px;">
         </div>
         
         <div class="stat" id="helmetStat">
@@ -145,10 +179,10 @@ body{
         <br><br>
         
         <div class="btn">
-            <button class="btn15" id="helmet70">
+            <button class="btn15 btn btn-info" id="helmet70">
             70%
             </button>
-            <button class="btn30" id="helmet30">
+            <button class="btn30 btn btn-info" id="helmet30">
             30%
             </button>
             </div>
@@ -156,10 +190,10 @@ body{
 </div>
 
 <div class="center">
-<div class="glove">장갑
-    
+<div class="glove">
+    노가다 목장갑    
     <div class="img">
-        <img src="" alt="x">
+        <img src="https://user-images.githubusercontent.com/91381230/156926771-4c97db11-8d3f-4dc4-a7b1-ad7e08cecfdf.GIF" width="100px;" height="100px;">
         </div>
        
         <div class="stat" id="gloveStat">
@@ -180,19 +214,20 @@ body{
         <br><br>
         
         <div class="btn">
-            <button class="btn15" id="glove70">
+            <button class="btn15 btn btn-info" id="glove70">
             70%
             </button>
-            <button class="btn30" id="glove30">
+            <button class="btn30 btn btn-info" id="glove30">
             30%
             </button>
         </div>
 </div>
 
-<div class="wear">옷
-    
+
+<div class="wear">
+    덤불 조끼
     <div class="img">
-        <img src="" alt="x">
+        <img src="https://user-images.githubusercontent.com/91381230/156926770-661f8917-e989-4590-997c-ff6f6ab3abab.GIF" width="100px;" height="100px;">
         </div>
         
         <div class="stat" id="wearStat">
@@ -213,19 +248,19 @@ body{
         <br><br>
         
         <div class="btn">
-            <button class="btn15" id="wear70">
+            <button class="btn15 btn btn-info" id="wear70">
             70%
             </button>
-            <button class="btn30" id="wear30">
+            <button class="btn30 btn btn-info" id="wear30">
             30%
             </button>
             </div>
 </div>
 
-<div class="weapon">무기
-    
+<div class="weapon">
+    투핸드소드
     <div class="img">
-        <img src="" alt="x">
+        <img src="https://user-images.githubusercontent.com/91381230/156926602-10c2ef2e-1eb5-4523-a433-34d6a43da69f.GIF" width="100px;" height="100px;" alt="x">
         </div>
         
         <div class="stat" id="weaponStat">
@@ -247,10 +282,10 @@ body{
         <br><br>
         
         <div class="btn">
-            <button class="btn15" id="weapon70">
+            <button class="btn15 btn btn-info" id="weapon70">
             70%
             </button>
-            <button class="btn30" id="weapon30">
+            <button class="btn30 btn btn-info" id="weapon30">
             30%
             </button>
             </div>
@@ -258,10 +293,10 @@ body{
 </div>
 
 <div class="bottom">
-<div class="shoes">신발
-    
+<div class="shoes">
+    기동신의 장화
     <div class="img">
-        <img src="" alt="x">
+        <img src="https://user-images.githubusercontent.com/91381230/156926769-6630fa4d-1844-41a7-b072-da12b1c79226.GIF" width="100px;" height="100px;">
         </div>
         
         <div class="stat" id="shoesStat">
@@ -283,16 +318,17 @@ body{
         <br><br>
         
         <div class="btn">
-            <button class="btn15" id="shoes70">
+            <button class="btn15 btn btn-info" id="shoes70">
             70%
             </button>
-            <button class="btn30" id="shoes30">
+            <button class="btn30 btn btn-info" id="shoes30">
             30%
             </button>
             </div>
     </div>
 </div>
 
+</div>
 
 <script src="enchant.js"></script>
 </body>
