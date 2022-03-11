@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>
+</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&displayswap" rel="stylesheet">
+<style>
+body{
+    position:relative;
+    margin:0px auto;
+    width:100%;
+    min-width:1px;
+    max-width:480px;
+    box-sizing: border-box;
+}
+.title{
+    height: 50px;
+    background-color: rgb(122, 120, 117);
+    text-align: center;
+}
+.chT{
+    background-color: bisque;
+}
+.chW{
+    background-color: beige;
+    padding: 10px;
+}
+.chD{
+    background-color: rgb(243, 243, 234);
+    padding: 10px;
+}
+.title1{
+    text-align: center;
+}
+label{
+    margin : 3px;
+}
+.r{
+    background-color: blanchedalmond;
+    height: 150px;
+    padding: 10px;
+    position: relative;
+}
+.btn{
+    position: absolute;
+    bottom : 0px;
+    left : 220px;
+}
+.Btn{
+    width: 20px;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapping">
+
+<div class="title">
+<h2>메이플 보스 계산기</h2>
+</div>
+
+<div class="chT">
+첫 번째 캐릭터
+</div>
+
+<div class="chW">
+<h3 class="title1">주간보스</h3>
+<label> <input name="w" type="checkbox" id="w12" value="11678544">하드 매그너스 </label>
+<label> <input name="w" type="checkbox" id="w1" value="7985546">카오스 핑크빈 </label>
+<label> <input name="w" type="checkbox" id="w1" value="9832404">카오스 자쿰 </label>
+<label> <input name="w" type="checkbox" id="w1" value="6991771">하드 힐라 </label>
+<label> <input name="w" type="checkbox" id="w1" value="12710792">카오스 벨룸 </label>
+<label> <input name="w" type="checkbox" id="w1" value="9895510">카오스 블러드퀸 </label>
+<label> <input name="w" type="checkbox" id="w1" value="9905515">카오스 반반 </label>
+<label> <input name="w" type="checkbox" id="w1" value="9926040">카오스 피에르 </label>
+<label> <input type="radio" name="sygnus" id="w1" value="9107455">노말 시그너스 </label>
+<label> <input type="radio" name="sygnus" id="w1" value="5544142"> 이지 시그너스 </label>
+
+</div>
+<div class="r">
+
+    <div id="wm1">총 수입은  0메소 입니다.</div>
+    <div class="btn">
+    <button id="send" class="Btn"> 
+    <span id="send">
+    계산하기
+    </span>
+    </button>
+    </div>
+    </div>
+</div>
+
+<div class="chD">
+<h3 class="title1"> 일간보스</h3>
+<label> <input type="checkbox" id="NB" value="585558">노말 벨룸 </label>
+<label> <input name="d" type="checkbox" id="NBQ" value="585558">노말 블러드퀸 </label>
+<label> <input name="d" type="checkbox" id="NBB" value="585558">노말 반반 </label>
+<label> <input name="d" type="checkbox" id="NP" value="585558">노말 피에르 </label>
+<label> <input name="d" type="checkbox" id="NP" value="849604">노말 핑크빈 </label>
+<label> <input type="radio" name="hontail" id="hontail1" value="817845">카오스 혼테일 </label>
+<label> <input type="radio" name="hontail" id="hontail2" value="612477">노말 혼테일 </label>
+<label> <input type="radio" name="hontail" id="hontail3" value="533536">이지 혼테일 </label>
+<label> <input type="radio" name="Gacoom" id="Gacoom1" value="370511">노말 자쿰 </label>
+<label> <input type="radio" name="Gacoom" id="Gacoom2" value="120983">이지 자쿰 </label>
+<label> <input name="d" type="checkbox" id="NC" value="483934">노말 힐라 </label><br>
+<label> <input type="radio" name="magnus" value="1567942">노말 매그너스 </label>
+<label> <input type="radio" name="magnus" value="436749">이지 매그너스 </label><br>
+<label> <input type="radio" name="pp" id="pp1" value="1611797">노말 파풀라투스 </label>
+<label> <input type="radio" name="pp" id="pp2" value="414063">이지 파풀라투스 </label><br>
+<label> <input type="radio" name="ban" id="ban1" value="1482045">하드 반레온 </label>
+<label> <input type="radio" name="ban" id="ban2" value="881968">노말 반레온 </label>
+<label> <input type="radio" name="ban" id="ban3" value="639999">이지 반레온 </label>
+<label> <input name="d" type="checkbox" id="caoong" value="756144">카웅 </label>
+
+</div>
+
+<div class="r">
+
+    <div id="dm1">총 수입은  0메소 입니다.</div>
+    <div class="btn">
+    <button id="send1"> 
+    <span id="send1">
+    계산하기
+    </span>
+    </button>
+    </div>
+    </div>
+</div>
+
+<div class="chT">
+두 번째 캐릭터
+</div>
+<div class="chW">
+<h3 class="title1">주간보스</h3>
+<label> <input name="w2" type="checkbox" id="w12" value="11678544">하드 매그너스 </label>
+<label> <input name="w2" type="checkbox" id="w1" value="7985546">카오스 핑크빈 </label>
+<label> <input name="w2" type="checkbox" id="w1" value="9832404">카오스 자쿰 </label>
+<label> <input name="w2" type="checkbox" id="w1" value="6991771">하드 힐라 </label>
+<label> <input name="w2" type="checkbox" id="w1" value="12710792">카오스 벨룸 </label>
+<label> <input name="w2" type="checkbox" id="w1" value="9895510">카오스 블러드퀸 </label>
+<label> <input name="w2" type="checkbox" id="w1" value="9905515">카오스 반반 </label>
+<label> <input name="w2" type="checkbox" id="w1" value="9926040">카오스 피에르 </label>
+<label> <input type="radio" name="sygnus2" id="w1" value="9107455">노말 시그너스 </label>
+<label> <input type="radio" name="sygnus2" id="w1" value="5544142"> 이지 시그너스 </label>
+
+</div>
+<div class="r">
+
+    <div id="wm2">총 수입은  0메소 입니다.</div>
+    <div class="btn">
+    <button id="send2"> 
+    <span id="send2">
+    계산하기
+    </span>
+    </button>
+    </div>
+    </div>
+</div>
+
+<div class="chD">
+
+<h3 class="title1"> 일간보스</h3>
+<label> <input name="d2" type="checkbox" id="NB" value="585558">노말 벨룸 </label>
+<label> <input name="d2" type="checkbox" id="NBQ" value="585558">노말 블러드퀸 </label>
+<label> <input name="d2" type="checkbox" id="NBB" value="585558">노말 반반 </label>
+<label> <input name="d2" type="checkbox" id="NP" value="585558">노말 피에르 </label>
+<label> <input name="d2" type="checkbox" id="NP" value="849604">노말 핑크빈 </label>
+<label> <input type="radio" name="hontail2" value="817845">카오스 혼테일 </label>
+<label> <input type="radio" name="hontail2" value="612477">노말 혼테일 </label>
+<label> <input type="radio" name="hontail2" value="533536">이지 혼테일 </label>
+<label> <input type="radio" name="Gacoom2" value="370511">노말 자쿰 </label>
+<label> <input type="radio" name="Gacoom2" value="120983">이지 자쿰 </label>
+<label> <input name="d2" type="checkbox" value="483934">노말 힐라 </label><br>
+<label> <input type="radio" name="magnus2" value="1567942">노말 매그너스 </label>
+<label> <input type="radio" name="magnus2" value="436749">이지 매그너스 </label><br>
+<label> <input type="radio" name="pp2" value="1611797">노말 파풀라투스 </label>
+<label> <input type="radio" name="pp2"  value="414063">이지 파풀라투스 </label><br>
+<label> <input type="radio" name="ban2" value="1482045">하드 반레온 </label>
+<label> <input type="radio" name="ban2" value="881968">노말 반레온 </label>
+<label> <input type="radio" name="ban2" value="639999">이지 반레온 </label>
+<label> <input name="d2" type="checkbox" id="caoong" value="756144">카웅 </label>
+
+</div>
+
+
+<div class="r">
+
+    <div id="dm2">총 수입은  0메소 입니다.</div>
+    <div class="btn">
+    <button id="send3"> 
+    <span id="send3">
+    계산하기
+    </span>
+    </button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+<script src="main.js">
+
+
+
+
+</script>
+</body>
+</html>
