@@ -37,9 +37,9 @@ window.onload = function() {
             w1_stone += parseInt(1);
         }
     }
-    document.getElementById('wm1').innerHTML = `총 획득하는 메소는 <b>${ w1_result }</b>입니다.<br> 
-    총 획득하는 마일리지는 <b>${ w1_mile }</b>입니다.<br>
-    총 판매하시는 결정석의 갯수는 <b>${w1_stone}</b>입니다.
+    document.getElementById('wm1').innerHTML = `총 획득하는 메소는 <b>${ w1_result.toLocaleString() }</b>입니다.<br> 
+    총 획득하는 마일리지는 <b>${ w1_mile.toLocaleString() }</b>입니다.<br>
+    총 판매하시는 결정석의 갯수는 <b>${w1_stone.toLocaleString()}</b>입니다.
     `
 
 }
@@ -66,9 +66,9 @@ document.getElementById('send2').onclick = function(){
             w2_stone += parseInt(1);
         }
     }
-    document.getElementById('wm2').innerHTML = `총 획득하는 메소는 <b>${ w2_result }</b>입니다.<br> 
-    총 획득하는 마일리지는 <b>${ w2_mile }</b>입니다.<br>
-    총 판매하시는 결정석의 갯수는 <b>${w2_stone}</b>입니다.`
+    document.getElementById('wm2').innerHTML = `총 획득하는 메소는 <b>${ w2_result.toLocaleString() }</b>입니다.<br> 
+    총 획득하는 마일리지는 <b>${ w2_mile.toLocaleString() }</b>입니다.<br>
+    총 판매하시는 결정석의 갯수는 <b>${w2_stone.toLocaleString()}</b>입니다.`
 }
 
 
@@ -133,9 +133,9 @@ document.getElementById('send2').onclick = function(){
             d1_stone += parseInt(1);
         }
     }
-    document.getElementById('dm2').innerHTML = `총 획득하는 메소는 <b>${ d1_result }</b>입니다.<br> 
-    총 획득하는 마일리지는 <b>${ d1_mile }</b>입니다.<br>
-    총 판매하시는 결정석의 갯수는 <b>${d1_stone}</b>입니다.`
+    document.getElementById('dm1').innerHTML = `총 획득하는 메소는 <b>${ d1_result.toLocaleString() }</b>입니다.<br> 
+    총 획득하는 마일리지는 <b>${ d1_mile.toLocaleString() }</b>입니다.<br>
+    총 판매하시는 결정석의 갯수는 <b>${d1_stone.toLocaleString()}</b>입니다.`
     }
 
 
@@ -198,9 +198,9 @@ document.getElementById('send2').onclick = function(){
             d2_stone += parseInt(1);
         }
     }
-    document.getElementById('dm2').innerHTML = `총 획득하는 메소는 <b>${ d2_result }</b>입니다.<br> 
-    총 획득하는 마일리지는 <b>${ d2_mile }</b>입니다.<br>
-    총 판매하시는 결정석의 갯수는 <b>${d2_stone}</b>입니다.`
+    document.getElementById('dm2').innerHTML = `총 획득하는 메소는 <b>${ d2_result.toLocaleString() }</b>입니다.<br> 
+    총 획득하는 마일리지는 <b>${ d2_mile.toLocaleString() }</b>입니다.<br>
+    총 판매하시는 결정석의 갯수는 <b>${d2_stone.toLocaleString()}</b>입니다.`
     }
 
 
