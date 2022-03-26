@@ -6,14 +6,14 @@
         😁HelloYSWorld👍
     </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
-body{
+  body{
     min-width: 1px;
     max-width: 1200px;
     position: relative;
@@ -22,61 +22,71 @@ body{
     color: black;
     font-family: 'Jua', sans-serif;
   }
-  input::placeholder {
+
+input::placeholder {
   color: rgb(90, 57, 57) ;
-font-family: 'Jua', sans-serif;
-text-align : center;
+  font-family: 'Jua', sans-serif;
+  text-align : center;
 }
 #color_bg {
 	width: 300px;
 	height: 300px;
 	background-color: black;
+  position: relative;
 }
 
 #btn {
 	width: 100px;
 	height: 30px;
-	
-	
 	background-color: black;
 	color: #ffffff;
-
 	font-size: 12px;
+  position: absolute;
+  bottom : 0px;
+  left : 100px;
 }
-    
-  </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#" id="top" style="font-family: 'Jua', sans-serif;">😁HelloYSWorld👍</a>
-        <form class="form-inline">
-            <ul class="nav justify-content-end">     
-              <li class="nav-item">
-             
-              </li>
-              <li class="nav-item">
-          
+.weather{
+  background-color:rgb(59, 52, 43);
+  width:300px; height : 250px;
+  border-radius: 100px;
+}
+.alerts{
+  margin-top:10px;  
+  border-radius:7px;
+}
+.navheader{
+  position: relative;
+  text-align: center;
+  background-color:rgb(40,40,40);
 
-          </a>
-        </li>
-      </ul>
-        </form>
-      
-       
-      </nav>
-      <div style="text-align:right">
-    </div>
-    
-   
-    
+}
+.nav{
+  position: absolute;
+  left:400px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div id="navheader">
+<nav class="navbar navbar-light bg-light">
+  <div id="nav">
+  <span class="navbar-text">
+      😁HelloYSWorld👍  
+    </span>
+  </div>  
+</nav>
+</div>
+
 <div class="container">
     
-<div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert">
+<div id="alerts" class="alert alert-primary text-center" role="alert">
 
 <b style="font-family: 'Jua', sans-serif; "> 오늘의 날씨는 ?</b>
 </div>
 <div align="center" class="col-md">
-<div class="jumbotron jumbotron-fluid" style="background-color:rgb(59, 52, 43); width:300px; height : 230px; border-radius: 100px;">
+<div class="jumbotron jumbotron-fluid weather" id="weather">
 <div class="container">
 <h3 style="color:rgb(72, 155, 155); text-align:center; font-family: 'Jua', sans-serif;">Today's Weather</h3>
 <div><p style="text-align:center; color:white" class="main">🌡:</p>
@@ -92,12 +102,12 @@ text-align : center;
       
 <div class="container">
     
-<div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert">
+<div id="alerts" class="alert alert-primary text-center" role="alert">
     <b style="font-family: 'Jua', sans-serif;"> 오늘 하루 당신의 운을 시험해보세요!</b>
   </div></div>
 
     <div class="container" id="color_bg">
-      <button style="margin-left:0%; margin-top:100%;" id="btn" type="button">오늘의 운세보기 </button>
+      <button id="btn" type="button">오늘의 운세보기 </button>
 
   </div>
       <div align="center" style="margin-top:50px" class="container">
@@ -110,8 +120,8 @@ text-align : center;
         </div>      
         <hr >
         <div class="container">
-        <div class="alert alert-primary text-center" role="alert" style="border-radius:7px; margin-bottom:10px">
-            <b style=" font-family: 'Jua', sans-serif; ">  편하고 빠르게 이동하세요!</b>
+        <div id="alerts" class="alert alert-primary text-center" role="alert">
+            <b>  편하고 빠르게 이동하세요!</b>
           </div>
         
     <div align="center" class="col-md">
@@ -148,8 +158,8 @@ text-align : center;
   </div>
 </div>
     <hr><div class="container">
-      <div class="alert alert-primary text-center" role="alert" style="border-radius:7px; margin-bottom:50px">
-        <b style=" font-family: 'Jua', sans-serif; "> 📈제작자의 관심 코인📈</b>
+      <div id="alerts" class="alert alert-primary text-center" role="alert">
+        <b> 📈제작자의 관심 코인📈</b>
       </div>
 <table><tr>
      <td> <div class="tradingview-widget-container">
@@ -179,13 +189,13 @@ text-align : center;
 </tr>
 </table>
 
-    <hr>
-    <div style="margin-top:10px; border-radius:7px;" class="alert alert-primary text-center" role="alert">
+<hr>
+<div id="alerts" class="alert alert-primary text-center" role="alert">
 
-      <b style="font-family: 'Jua', sans-serif; "> 맛있는 메뉴들의 열량은?</b>
-     </div>
-    <div class="container">
-  <table class="table table-hover">
+<b> 맛있는 메뉴들의 열량은?</b>
+</div>
+<div class="container">
+<table class="table table-hover">
    
     
     <tr class="table-dark">
@@ -258,6 +268,7 @@ text-align : center;
 
 <div style="position:fixed; bottom : 5px; right:60px ;">
 <input class="btn btn-dark" type="button" value="Veiw Dark Mode" onclick="dayNight(this);">
+
 
 </div>
 
@@ -334,6 +345,7 @@ text-align : center;
   
         break;
     }
+    console.log(random)
       
   })
   
@@ -437,9 +449,8 @@ text-align : center;
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </script>
     <script src=" https://ys0222.github.io/ys0222/JS/js1.js"></script>
-    <script src="https://ys0222.github.io/ys0222/JS/darkmode/0327.js">
-     //dark mode
-    </script>
+    <script src=" https://ys0222.github.io/ys0222/JS/darkmode/0327.js"></script>
+
         
     <script src="https://ys0222.github.io/ys0222/JS/weatherhistory/weather.js"> </script>
 
