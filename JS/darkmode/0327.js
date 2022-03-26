@@ -7,14 +7,14 @@ function changeBackColor(color){
 }
 
 function dayNight(self){
-    if(self.value == 'day'){
+    if(self.value == 'Veiw Day Mode'){
     changeBody('white')
     changeBackColor('black')
-    self.value = 'night'
+    self.value = 'Veiw Dark Mode'
     }
     else {
     changeBody('black')
     changeBackColor('white')
-    self.value = 'day'
+    self.value = 'Veiw Day Mode'
     }
 }
